@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- main stylesheet -->
+    <link
+    rel="stylesheet"
+    href="./assets/fontawesome-free-6.4.0-web/css/all.css"
+    />
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/mobail.css">
+    <title>Elite</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="header">
+          <nav class="navbar toggal">
+          <img class="logo" src="./img/logo.png" alt="logo" />
+
+          <div class="toggal-btn"><i class="fa-solid fa-bars"></i></div>
+            <ul class="toggal-content">
+              <li><a href="#" class="nav">Home page</a></li>
+              <li><a href="#" class="nav">Shortcodes</a></li>
+              <li><a href="#" class="nav">Gallery</a></li>
+              <li><a href="#" class="nav">Blog</a></li>
+              <li><a href="#" class="nav">Contact</a></li>
+            </ul>
+
+          </nav>
+
+        </div>
+      </div>
+    </header>
+    <!-- Banner -->
+    <section>
+      <div class="container">
+        <div class="banner">
+          <div class="slider">
+            <img id="img-1" src="./img/intestaller1.png" alt="Image 1" />
+            <img id="img-2" src="./img/mainLogo.jpg" alt="Image 2" />
+            <img
+              id="img-3"
+              src="./img/pexels-pixabay-256219.jpg"
+              alt="Image 2"
+            />
+            <img id="img-4" src="./img/intestaller1.png" alt="Image 2" />
+
+            <div class="navigation-button">
+              <span class="dot active" onclick="changeSlide(0)"></span>
+              <span class="dot" onclick="changeSlide(1)"></span>
+              <span class="dot" onclick="changeSlide(2)"></span>
+              <span class="dot" onclick="changeSlide(3)"></span>
+            </div>
+          </div>
+
+          <p class="banner_info">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+            aspernatur aliquid distinctio? Nemo delectus sequi eius minus ut
+            inventore rem, exercitationem eveniet architecto saepe ipsa non?
+            Earum ad tempore voluptatem.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="special-p">
+          <p>Buy this theme on themeforest now!</p>
+          <button>Buy it now</button>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="testimonials">
+          <div class="testimonial">
+            <div>
+            <img src="./img/peakpx (6).jpg" alt="img1" />
+            </div>
+            <p>
+              Lorem ipsum dolor, sia deserunt ut mollitia optio quibusdam,
+              consequatur architecto amet?
+            </p>
+          </div>
+          <div class="testimonial">
+            <div>
+            <img src="./img/intestaller1.png" alt="img1" />
+            </div>
+            <p>
+              Lorem ipsum dolor, sia deserunt ut mollitia optio quibusdam,
+              consequatur architecto amet?
+            </p>
+          </div>
+          <div class="testimonial">
+            <div>
+            <img src="./img/peakpx (6).jpg" alt="img1" />
+            </div>
+            <p>
+              Lorem ipsum dolor, sia deserunt ut mollitia optio quibusdam,
+              consequatur architecto amet?
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="about">
+          <div class="testimonials">
+            <!-- Testimonials started here -->
+            <div class="testimonial">
+              <h2><i class="fa-solid fa-id-card"></i>About Us</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+                nobis nostrum totam nam laborum!
+              </p>
+              <a href="#">Read More...</a>
+            </div>
+            <div class="testimonial">
+              <h2><i class="fa-solid fa-award"></i>What we do</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+                nobis nostrum totam nam laborum!
+              </p>
+              <a href="#">Read More...</a>
+            </div>
+            <div class="testimonial">
+              <h2><i class="fa-solid fa-heart-circle-plus"></i>Testimonies</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+                nobis nostrum totam nam laborum!
+              </p>
+              <a href="#">Read More...</a>
+            </div>
+            <!-- Testimonials End here  -->
+          </div>
+          <!-- NEXT FLEXED ABOUT SECTION -->
+          <div class="about-info">
+            <div class="about-left">
+              <h2><i class="fa-solid fa-bookmark"></i>Letest from the blog</h2>
+              <img src="./img/mainLogo.jpg" alt="" />
+              <div class="about-left-info">
+                <h4>Cuarabitur elit ut</h4>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Commodi alias voluptatibus mollitia. Omnis quasi dolorum
+                  facere est ipsa nam, hic sed alias, quidem voluptas impedit
+                  cum dolor. Natus, recusandae aut?
+                </p>
+                <br />  
+                <a href="#">Read More...</a>
+                <nav>
+                  <label for="date"
+                    ><i class="fa-solid fa-calendar-days"></i
+                    ><span id="date"></span
+                  ></label>
+                  <label for="admin"
+                    ><i class="fa-solid fa-user"></i> Admin</label
+                  >
+                  <label for="comments"
+                    ><sup><i class="fa-solid fa-comments"></i></sup></i
+                  >55</label>
+                </nav>
+              </div>
+            </div>
+            <div class="about-right">
+              <h3><i class="fa-regular fa-code-branch"></i>Our partners</h3>
+              <div class="icons">
+                <div class="icon">
+                 <label>HTML</label>
+                 <i class="fa-brands fa-html5"></i>
+                </div>
+                 <div class="icon">
+                  <label>CSS</label>
+                 <i class="fa-brands fa-css3-alt"></i> 
+                </div>
+              </div>
+              <div class="pictures">
+                <h3><i class="fa-regular fa-image"></i>Latest pictures</h3>
+                <div class="grid">
+                <img src="./img/intestaller1.png" alt="">
+                <img src="./img/peakpx (6).jpg" alt="">
+                <img src="./img/mainLogo.jpg" alt="">
+                <img src="./img/pexels-pixabay-256219.jpg" alt="">
+                <img src="./img/mainLogo.jpg" alt="">
+                <img src="./img/pexels-pixabay-256219.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New section with slider -->
+    <section>
+    <div class="container">
+      <div class="slideingTestimonial">
+        <h1>A Simple jquery carousel</h1>
+        <div class="testimonial-slider">
+              <div class="item">
+                  <div class="sliderImg">
+                    <img src="./img/peakpx (6).jpg" alt="img1" />             
+                  </div>      <div class="sliderInfo">
+                      <h6>smallbold heading</h6>
+                  <p>
+                    Lorem ipsum dolor, sia deserunt ut mollitia optio quibusdam,
+                    consequatur architecto amet?
+                  </p>
+                  </div>
+                </div>
+                <div class="item">
+                    <div class="sliderImg">
+                      <img src="./img/intestaller1.png" alt="img1" />
+                      </div>
+                      <div class="sliderInfo">
+                      <h6>smallbold heading</h6>
+                    <p>
+                      Lorem ipsum dolor, sia deserunt ut mollitia optio quibusdam,
+                      consequatur architecto amet?
+                    </p>
+                    </div>
+                </div>
+          
+                <div class="item">
+                  <div class="sliderImg">
+                     <img src="./img/peakpx (6).jpg" alt="img1" />
+                  </div><div class="sliderInfo">
+                      <h6>smallbold heading</h6>
+                  <p>
+                    Lorem ipsum dolor, sia deserunt ut mollitia optio quibusdam,
+                      consequatur architecto amet?
+                  </p>
+                  </div>
+                </div>   
+                
+                <div class="item">
+                    <div class="sliderImg">
+                      <img src="./img/intestaller1.png" alt="img1" />
+                      </div>
+                      <div class="sliderInfo">
+                      <h6>smallbold heading</h6>
+                    <p>
+                      Lorem ipsum dolor, sia deserunt ut mollitia optio quibusdam,
+                      consequatur architecto amet?
+                    </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="sliderImg">
+                      <img src="./img/intestaller1.png" alt="img1" />
+                      </div>
+                      <div class="sliderInfo">
+                      <h6>smallbold heading</h6>
+                    <p>
+                      Lorem ipsum dolor, sia deserunt ut mollitia optio quibusdam,
+                      consequatur architecto amet?
+                    </p>
+                    </div>
+                </div>
+          </div>  <!-- sliders end here -->
+    </div>
+    </section>
+
+    <!-- review -->
+    <section>
+      <div class="container">
+        <div class="reviews">
+        <div class="review">
+          <div>
+          <img src="./img/IMG-20200213-WA0008.jpg" alt="">
+          <p>dkafifr</p>
+          </div>
+          <p class="comments">Systeam parecent</p>
+        </div>
+        <div class="review">
+          <div>
+          <img src="./img/IMG-20200213-WA0008.jpg" alt="">
+          <p>dkafifr</p>
+          </div>
+          <p class="comments">Lorem ipsum dolor sit amet.</p>
+        </div><div class="review">
+          <div>
+          <img src="./img/IMG-20200213-WA0008.jpg" alt="">
+          <p>dkafifr</p>
+          </div>
+          <p class="comments">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil!</p>
+        </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer">
+      <p>Lorem ipsum dolor elit. modi eum quae porro, ea consectetur culpa, eius eaque. Distinctio.<a href="#">Link here</a></p>
+      
+      <div class="social-icon">
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-linux"></i></a>
+      </div>
+      </div>
+      </div>
+    </footer>
+ 
+    <!-- javascript linked here -->
+    <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./js/custom.js"></script>
+  </body>
+</html>

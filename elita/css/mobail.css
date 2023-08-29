@@ -1,0 +1,951 @@
+@media (max-width: 575px) {
+  i {
+    padding: 0px 5px;
+  }
+
+  header .container .header {
+    padding: 0px;
+  }
+  header .container .header .navbar {
+    align-items: center;
+  }
+  header .container .header .toggal {
+    position: relative;
+    display: block;
+    /* background-color: blue; */
+  }
+
+  /* Logo style */
+  header .container .header .navbar .logo {
+    width: 80px;
+  }
+  /* nav btn */
+  header .container .header .navbar ul {
+    display: none;
+    bottom: 40;
+    text-align: center;
+    color: white;
+    z-index: 11;
+  }
+
+  header .container .header .navbar ul li {
+    display: inherit;
+    position: inherit;
+    top: 109;
+  }
+  header .container .header .navbar ul li a {
+    display: inherit;
+    /* display: inline-block;  */
+    border-bottom: 1px dotted #ddd;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin: 0;
+  }
+  header .container .header .navbar ul li a:hover {
+    background-color: #b1acac;
+  }
+
+  /* hamburger menu btn */
+  header .container .header .toggal .toggal-btn i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 40px;
+    transition: all 0.2s ease-in-out;
+    margin-top: 20px;
+    z-index: 15;
+  }
+  header .container .header .toggal .toggal-btn {
+    display: block;
+  }
+  header .container .header .navbar .toggal-btn i:hover {
+    transform: rotate(180deg);
+  }
+  /* Header Ends here */
+
+  /* Banner section start here */
+  section .container .banner {
+    margin: 0;
+  }
+  section .container .banner .slider {
+    height: 310px;
+  }
+  section .container .banner .slider img {
+    height: 310px;
+    width: 100%;
+  }
+
+  section .container .banner .banner-info {
+    padding: 20px 10px;
+    font-size: 11px;
+  } /*banner styling ends here */
+
+  /* special paragraph style*/
+  .special-p {
+    font-size: 20px;
+    padding: 15px 0px;
+    margin: 20px 0px;
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    background-color: white;
+  }
+
+  .special-p button {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+
+  /* Testimoinal style */
+  .testimonials {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .testimonials .testimonial p {
+    padding: 15px;
+  } /* testimoinial style end here */
+
+  /* about style start here */
+  .about {
+    padding: 0px;
+    margin: 25px 0 0px 0px;
+    background: none;
+  }
+  .about .testimonials .testimonial {
+    padding: 0px;
+  }
+  .about .testimonials .testimonial h2 {
+    font-size: 20px;
+    margin: 10px 0px;
+  }
+  /* about Info styleing */
+  .about .about-info {
+    flex-direction: column;
+    margin-top: 25px;
+    padding: 10px;
+
+    background-color: white;
+  }
+  .about .about-info .about-left {
+    width: 100%;
+    padding: 0;
+  }
+  .about .about-info .about-left h2 {
+    font-size: 20px;
+    padding: 8px 0px;
+  }
+
+  .about .about-info .about-left img {
+    height: 100%;
+  }
+  .about .about-info .about-left-info {
+    padding: 0px;
+  }
+  .about .about-info .about-left-info h4 {
+    font-size: 18px;
+    font-weight: 550;
+    padding: 8px 0px;
+  }
+  .about .about-info .about-left-info p {
+    font-size: 15px;
+  }
+  .about .about-info .about-left-info nav {
+    margin-top: 10px;
+    text-align: center;
+  } /* about info left style Ends here */
+
+  /* About Info Right style start */
+  .about .about-info .about-right {
+    width: 100%;
+    padding: 0px;
+    margin-top: 25px;
+    /* padding: 0 0 10px 0; */
+  }
+  .about .about-info .about-right h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 0px;
+  }
+  .about .about-info .about-right .icons {
+    height: 100%;
+  }
+  .about .about-info .about-right .pictures .grid {
+    gap: 6px;
+  }
+  .slideingTestimonial {
+    margin-top: 25px;
+    padding: 0px 10px;
+  }
+  .slideingTestimonial h1 {
+    font-size: 20px;
+    margin: 5px 0px 15px;
+  }
+
+  .slick-prev {
+    left: 0;
+    z-index: 2;
+  }
+  .slick-next {
+    right: 0;
+  }
+  /* Reviews style start */
+  .reviews {
+    display: block;
+    margin: 10px 0px;
+  }
+  .reviews .review:nth-child(even) {
+    margin: 10px 0px;
+  }
+  .reviews .review .comments {
+    padding: 10px 6px;
+  }
+
+  /* footer style */
+  .footer {
+    padding: 10px;
+    text-align: center;
+    /* margin: 10px 0px; */
+    margin-top: 20px;
+    margin-bottom: 0;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .social-icon > a > i {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  /* medea query ends here*/
+}
+
+@media only screen and (max-width: 767px) and (min-width: 576px) {
+  i {
+    padding: 0px 5px;
+  }
+
+  header .container .header {
+    padding: 0px;
+  }
+  header .container .header .navbar {
+    align-items: center;
+  }
+  header .container .header .toggal {
+    position: relative;
+    display: block;
+    /* background-color: blue; */
+  }
+
+  /* Logo style */
+  header .container .header .navbar .logo {
+    width: 80px;
+  }
+  /* nav btn */
+  header .container .header .navbar ul {
+    display: none;
+    bottom: 40;
+    text-align: center;
+    color: white;
+    z-index: 11;
+  }
+
+  header .container .header .navbar ul li {
+    display: inherit;
+    position: inherit;
+    top: 109;
+  }
+  header .container .header .navbar ul li a {
+    display: inherit;
+    /* display: inline-block;  */
+    border-bottom: 1px dotted #ddd;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin: 0;
+  }
+  header .container .header .navbar ul li a:hover {
+    background-color: #b1acac;
+  }
+
+  /* hamburger menu btn */
+  header .container .header .toggal .toggal-btn i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 40px;
+    transition: all 0.2s ease-in-out;
+    margin-top: 20px;
+    z-index: 15;
+  }
+  header .container .header .toggal .toggal-btn {
+    display: block;
+  }
+  header .container .header .navbar .toggal-btn i:hover {
+    transform: rotate(180deg);
+  }
+  /* Header Ends here */
+
+  /* Banner section start here */
+  section .container .banner {
+    margin: 0;
+  }
+  section .container .banner .slider {
+    height: 310px;
+  }
+  section .container .banner .slider img {
+    height: 310px;
+    width: 100%;
+  }
+
+  section .container .banner .banner-info {
+    padding: 20px 10px;
+    font-size: 11px;
+  } /*banner styling ends here */
+
+  /* special paragraph style*/
+  .special-p {
+    font-size: 20px;
+    padding: 15px 0px;
+    margin: 20px 0px;
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    background-color: white;
+  }
+
+  .special-p button {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+
+  /* Testimoinal style */
+  .testimonials {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .testimonials .testimonial p {
+    padding: 15px;
+  } /* testimoinial style end here */
+
+  /* about style start here */
+  .about {
+    padding: 0px;
+    margin: 25px 0 0px 0px;
+    background: none;
+  }
+  .about .testimonials .testimonial {
+    padding: 0px;
+  }
+  .about .testimonials .testimonial h2 {
+    font-size: 20px;
+    margin: 10px 0px;
+  }
+  /* about Info styleing */
+  .about .about-info {
+    flex-direction: column;
+    margin-top: 25px;
+    padding: 10px;
+
+    background-color: white;
+  }
+  .about .about-info .about-left {
+    width: 100%;
+    padding: 0;
+  }
+  .about .about-info .about-left h2 {
+    font-size: 20px;
+    padding: 8px 0px;
+  }
+
+  .about .about-info .about-left img {
+    height: 100%;
+  }
+  .about .about-info .about-left-info {
+    padding: 0px;
+  }
+  .about .about-info .about-left-info h4 {
+    font-size: 18px;
+    font-weight: 550;
+    padding: 8px 0px;
+  }
+  .about .about-info .about-left-info p {
+    font-size: 15px;
+  }
+  .about .about-info .about-left-info nav {
+    margin-top: 10px;
+    text-align: center;
+  } /* about info left style Ends here */
+
+  /* About Info Right style start */
+  .about .about-info .about-right {
+    width: 100%;
+    padding: 0px;
+    margin-top: 25px;
+    /* padding: 0 0 10px 0; */
+  }
+  .about .about-info .about-right h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 0px;
+  }
+  .about .about-info .about-right .icons {
+    height: 100%;
+  }
+  .about .about-info .about-right .pictures .grid {
+    gap: 10px;
+  }
+  .slideingTestimonial {
+    margin-top: 25px;
+    padding: 0px 10px;
+  }
+  .slideingTestimonial h1 {
+    font-size: 20px;
+    margin: 5px 0px 15px;
+  }
+
+  .slick-prev {
+    left: 0;
+    z-index: 2;
+  }
+  .slick-next {
+    right: 0;
+  }
+  /* Reviews style start */
+  .reviews {
+    display: block;
+    margin: 10px 10px;
+    width: 50%;
+  }
+  .reviews .review {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .reviews .review:nth-child(even) {
+    margin: 10px 0px;
+  }
+  .reviews .review .comments {
+    padding: 10px 6px;
+    width: inherit;
+  }
+
+  /* footer style */
+  .footer {
+    padding: 10px;
+    text-align: center;
+    /* margin: 10px 0px; */
+    margin-top: 20px;
+    margin-bottom: 0;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .social-icon > a > i {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
+
+/* x */
+
+@media only screen and (max-width: 991px) and (min-width: 768px) {
+  i {
+    padding: 0px 5px;
+  }
+
+  header .container .header {
+    padding: 0px;
+  }
+  header .container .header .navbar {
+    align-items: center;
+  }
+  header .container .header .toggal {
+    position: relative;
+    display: block;
+    /* background-color: blue; */
+  }
+
+  /* Logo style */
+  header .container .header .navbar .logo {
+    width: 80px;
+  }
+  /* nav btn */
+  header .container .header .navbar ul {
+    display: none;
+    bottom: 40;
+    text-align: center;
+    color: white;
+    z-index: 11;
+  }
+
+  header .container .header .navbar ul li {
+    display: inherit;
+    position: inherit;
+    top: 109;
+  }
+  header .container .header .navbar ul li a {
+    display: inherit;
+    /* display: inline-block;  */
+    border-bottom: 1px dotted #ddd;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    margin: 0;
+  }
+  header .container .header .navbar ul li a:hover {
+    background-color: #b1acac;
+  }
+
+  /* hamburger menu btn */
+  header .container .header .toggal .toggal-btn i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 40px;
+    transition: all 0.2s ease-in-out;
+    margin-top: 20px;
+    z-index: 15;
+  }
+  header .container .header .toggal .toggal-btn {
+    display: block;
+  }
+  header .container .header .navbar .toggal-btn i:hover {
+    transform: rotate(180deg);
+  }
+  /* Header Ends here */
+
+  /* Banner section start here */
+  section .container .banner {
+    margin: 0;
+  }
+  section .container .banner .slider {
+    height: 410px;
+  }
+  section .container .banner .slider img {
+    height: 410px;
+    width: 100%;
+  }
+
+  section .container .banner .banner-info {
+    padding: 20px 10px;
+    font-size: 11px;
+  } /*banner styling ends here */
+
+  /* special paragraph style*/
+  .special-p {
+    font-size: 20px;
+    padding: 15px 0px;
+    margin: 20px 0px;
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    background-color: white;
+  }
+
+  .special-p button {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+
+  /* Testimoinal style */
+  .testimonials {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .testimonials .testimonial p {
+    padding: 15px;
+  } /* testimoinial style end here */
+
+  /* about style start here */
+  .about {
+    padding: 0px;
+    margin: 25px 0 0px 0px;
+    background: none;
+  }
+  .about .testimonials .testimonial {
+    padding: 0px;
+  }
+  .about .testimonials .testimonial h2 {
+    font-size: 20px;
+    margin: 10px 0px;
+  }
+  /* about Info styleing */
+  .about .about-info {
+    flex-direction: column;
+    margin-top: 25px;
+    padding: 10px;
+
+    background-color: white;
+  }
+  .about .about-info .about-left {
+    width: 100%;
+    padding: 0;
+  }
+  .about .about-info .about-left h2 {
+    font-size: 20px;
+    padding: 8px 0px;
+  }
+
+  .about .about-info .about-left img {
+    height: 100%;
+  }
+  .about .about-info .about-left-info {
+    padding: 0px;
+  }
+  .about .about-info .about-left-info h4 {
+    font-size: 18px;
+    font-weight: 550;
+    padding: 8px 0px;
+  }
+  .about .about-info .about-left-info p {
+    font-size: 15px;
+  }
+  .about .about-info .about-left-info nav {
+    margin-top: 10px;
+    text-align: center;
+  } /* about info left style Ends here */
+
+  /* About Info Right style start */
+  .about .about-info .about-right {
+    width: 100%;
+    padding: 0px;
+    margin-top: 25px;
+    /* padding: 0 0 10px 0; */
+  }
+  .about .about-info .about-right h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 0px;
+  }
+  .about .about-info .about-right .icons {
+    height: 100%;
+  }
+  .about .about-info .about-right .pictures .grid {
+    gap: 10px;
+  }
+  .slideingTestimonial {
+    margin-top: 25px;
+    padding: 0px 10px;
+  }
+  .slideingTestimonial h1 {
+    font-size: 20px;
+    margin: 5px 0px 15px;
+  }
+  .slideingTestimonial h6 {
+    font-size: 18px;
+  }
+  .slick-prev {
+    left: 0;
+    z-index: 2;
+  }
+  .slick-next {
+    right: 0;
+  }
+  /* Reviews style start */
+  .reviews {
+    display: block;
+    margin: 10px 10px;
+    width: 50%;
+  }
+  .reviews .review {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .reviews .review:nth-child(even) {
+    margin: 10px 0px;
+  }
+  .reviews .review .comments {
+    padding: 10px 6px;
+    width: inherit;
+  }
+
+  /* footer style */
+  .footer {
+    padding: 10px;
+    text-align: center;
+    /* margin: 10px 0px; */
+    margin-top: 20px;
+    margin-bottom: 0;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .social-icon > a > i {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 992px) {
+  i {
+    padding: 0px 5px;
+  }
+  header .container .header {
+    padding: 0px;
+  }
+  header .container .header .navbar {
+    align-items: center;
+  }
+  header .container .header .toggal {
+    position: relative;
+    display: block;
+    display: flex;
+    /* background-color: blue; */
+  }
+
+  /* Logo style */
+  header .container .header .navbar .logo {
+    width: 80px;
+  }
+  /* nav btn */
+  header .container .header .navbar ul {
+    display: inline;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    /* background-color: blue; */
+    width: 100%;
+    bottom: 40;
+    text-align: center;
+    color: white;
+    z-index: 11;
+  }
+
+  header .container .header .navbar ul li {
+    display: inherit;
+    position: inherit;
+    top: 109;
+    margin-right: 10px;
+  }
+  header .container .header .navbar ul li a {
+    display: inherit;
+    /* display: inline-block;  */
+    color: black;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    width: 100%;
+    margin: 0;
+  }
+  header .container .header .navbar ul li a:hover {
+    color: #b1acac;
+    border-bottom: 2px solid rgb(34, 34, 63);
+  }
+
+  /* hamburger menu btn */
+  header .container .header .toggal .toggal-btn i {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 40px;
+    transition: all 0.2s ease-in-out;
+    margin-top: 20px;
+    z-index: 15;
+    transition: margin-right 0.2s ease-in;
+    animation: moveLeft 2s linear infinite;
+  }
+
+  /* header .container .header .toggal .toggal-btn i:hover {
+  } */
+  header .container .header .toggal .toggal-btn {
+    display: block;
+  }
+  header .container .header .navbar .toggal-btn i:hover {
+    transform: rotate(180deg);
+  }
+  /* Header Ends here */
+
+  /* Banner section start here */
+  section .container .banner {
+    margin: 0;
+  }
+  section .container .banner .slider {
+    height: 410px;
+  }
+  section .container .banner .slider img {
+    height: 410px;
+    width: 100%;
+  }
+
+  section .container .banner .banner-info {
+    padding: 20px 10px;
+    font-size: 11px;
+  } /*banner styling ends here */
+
+  /* special paragraph style*/
+  .special-p {
+    font-size: 20px;
+    padding: 15px 0px;
+    margin: 20px 0px;
+    display: block;
+    text-align: center;
+    background-color: transparent;
+    background-color: white;
+  }
+
+  .special-p button {
+    font-size: 16px;
+    padding: 8px 15px;
+  }
+
+  /* Testimoinal style */
+  .testimonials {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .testimonials .testimonial div::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 220px;
+    z-index: 10;
+    width: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 13px solid white;
+  }
+  .testimonials .testimonial p {
+    padding: 15px;
+    text-align: center;
+  } /* testimoinial style end here */
+
+  /* about style start here */
+  .about {
+    padding: 0px;
+    margin: 25px 0 0px 0px;
+    background: none;
+  }
+
+  .about .testimonials .testimonial {
+    padding: 0px;
+  }
+  .about .testimonials .testimonial h2 {
+    font-size: 20px;
+    margin: 10px 0px;
+  }
+  .about .testimonials .testimonial p {
+    text-align: center;
+  }
+  .about .testimonials .testimonial a {
+    margin-right: 100px;
+  }
+
+  /* about Info styleing */
+  .about .about-info {
+    flex-direction: column;
+    margin-top: 25px;
+    padding: 10px;
+
+    background-color: white;
+  }
+  .about .about-info .about-left {
+    width: 100%;
+    padding: 0;
+  }
+  .about .about-info .about-left h2 {
+    font-size: 20px;
+    padding: 8px 0px;
+  }
+
+  .about .about-info .about-left img {
+    height: 100%;
+  }
+  .about .about-info .about-left-info {
+    padding: 0px;
+  }
+  .about .about-info .about-left-info h4 {
+    font-size: 18px;
+    font-weight: 550;
+    padding: 8px 0px;
+  }
+  .about .about-info .about-left-info p {
+    font-size: 15px;
+  }
+
+  .about .about-info .about-left-info nav {
+    margin-top: 10px;
+    text-align: center;
+  } /* about info left style Ends here */
+
+  /* About Info Right style start */
+  .about .about-info .about-right {
+    width: 100%;
+    padding: 0px;
+    margin-top: 25px;
+    /* padding: 0 0 10px 0; */
+  }
+  .about .about-info .about-right h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px 0px;
+  }
+  .about .about-info .about-right .icons {
+    height: 100%;
+  }
+  .about .about-info .about-right .pictures .grid {
+    gap: 10px;
+  }
+  .slideingTestimonial {
+    margin-top: 25px;
+    padding: 0px 10px;
+  }
+  .slideingTestimonial h1 {
+    font-size: 20px;
+    margin: 5px 0px 15px;
+  }
+  .slideingTestimonial h6 {
+    font-size: 18px;
+  }
+  .slick-prev {
+    left: 0;
+    z-index: 2;
+  }
+  .slick-next {
+    right: 0;
+  }
+  /* Reviews style start */
+  .reviews {
+    display: block;
+    margin: 10px 10px;
+    width: 50%;
+  }
+  .reviews .review {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .reviews .review:nth-child(even) {
+    margin: 10px 0px;
+  }
+  .reviews .review .comments {
+    padding: 10px 6px;
+    width: inherit;
+  }
+
+  /* footer style */
+  .footer {
+    padding: 10px;
+    text-align: center;
+    /* margin: 10px 0px; */
+    margin-top: 20px;
+    margin-bottom: 0;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .social-icon > a > i {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .container {
+    padding: 0 10px;
+  }
+}
