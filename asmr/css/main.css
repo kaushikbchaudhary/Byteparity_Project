@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato&family=Mulish&family=Open+Sans&family=Poppins:wght@300;400;500;600;700;800&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  appearance: none;
+  border: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.88rem;
+  user-select: none;
+  overflow-x: hidden;
+  color: #363949;
+  background-color: #f6f6f9;
+}
+
+a {
+  color: #363949;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 0.87rem;
+}
+
+p {
+  color: #677483;
+}
+
+b {
+  color: #363949;
+}
+
+.text-muted {
+  color: #7d8da1;
+}
+
+.primary {
+  color: #6c9BCF;
+}
+
+.danger {
+  color: #ff0060;
+}
+
+.success {
+  color: #1B9C85;
+}
+
+.warning {
+  color: #f7D060;
+}
+
+.container {
+  display: grid;
+  gap: 1.8rem;
+  margin: 0 auto;
+  width: 96%;
+  grid-template-columns: 12rem auto 23rem;
+}
+
+aside {
+  height: 100vh;
+}
+aside .toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.4rem;
+}
+aside .toggle .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside .toggle .logo img {
+  width: 2rem;
+}
+aside .toggle .logo h2 {
+  margin-left: 0.4rem;
+}
+aside .toggle .close {
+  display: none;
+}
+aside .sidebar {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  height: 88vh;
+  background-color: #fff;
+  box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+  position: relative;
+  top: 1.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+aside .sidebar:hover {
+  box-shadow: none;
+}
+aside .sidebar a {
+  display: flex;
+  align-items: center;
+  color: #7d8da1;
+  height: 3.7rem;
+  gap: 1rem;
+  position: relative;
+  margin-left: 2rem;
+  transition: all 0.3s ease;
+}
+aside .sidebar a:hover {
+  color: #6c9BCF;
+}
+aside .sidebar a:hover span {
+  margin-left: 0.6rem;
+}
+aside .sidebar a:last-child {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
+}
+aside .sidebar a.active {
+  width: 100%;
+  color: #6c9BCF;
+  background-color: rgba(132, 139, 200, 0.18);
+  margin-left: 0;
+}
+aside .sidebar a.active::before {
+  content: "";
+  width: 6px;
+  height: 18px;
+  background-color: #6c9BCF;
+}
+aside .sidebar a.active span {
+  color: #6c9BCF;
+  margin-left: calc(1rem - 3px);
+}
+aside .sidebar a span {
+  font-size: 1.6rem;
+  transition: all 0.3s ease;
+}
+aside .sidebar a .message-count {
+  font-size: 11px;
+  padding: 2px 6px;
+  background-color: #ff0060;
+  color: #fff;
+  border-radius: 0.4rem;
+}
+
+main {
+  margin-top: 1.4rem;
+}
+main .analyse {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+}
+main .analyse > div {
+  background-color: #fff;
+  padding: 1.8rem;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+main .analyse > div:hover {
+  box-shadow: none;
+}
+main .analyse .sales svg circle {
+  stroke: #1B9C85;
+  stroke-dashoffset: -30;
+  stroke-dasharray: 200;
+}
+main .analyse .visits svg circle {
+  stroke: #ff0060;
+  stroke-dashoffset: -50;
+  stroke-dasharray: 200;
+}
+main .analyse .searches svg circle {
+  stroke: #6c9BCF;
+  stroke-dashoffset: -10;
+  stroke-dasharray: 200;
+}
+main .analyse .status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .analyse h3 {
+  margin-left: 0.6rem;
+  font-size: 1rem;
+}
+main .analyse .progress {
+  position: relative;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+}
+main .analyse .progress svg {
+  width: 7rem;
+  height: 7rem;
+}
+main .analyse .progress svg circle {
+  fill: none;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform: translate(5px, 5px);
+}
+main .analyse .progress .percentage {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  top: -3px;
+  left: -1px;
+}
+
+.new-users {
+  margin-top: 1.3rem;
+}
+.new-users .user-list {
+  background-color: #fff;
+  box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+  padding: 1.8rem;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.new-users .user-list:hover {
+  box-shadow: none;
+}
+.new-users .user-list .user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.new-users .user-list .user img {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 0.4rem;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=main.css.map */
