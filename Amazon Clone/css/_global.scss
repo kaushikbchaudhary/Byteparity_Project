@@ -1,0 +1,25 @@
+//  Global styling
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial,sans-serif;
+}
+
+img{
+  width: 100%;
+}
+
+.border{
+  border: 1.5px solid transparent;
+
+  &:hover{
+    border: 1.5px solid #ccc;
+  }
+}
+.prime-color{
+  color: rgba(0, 0, 255, 0.63);
+}
