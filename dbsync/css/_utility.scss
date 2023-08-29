@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "proxima-nova", "Extrabold";
+  src: local("Proxima Nova"), url("../font/Proxima Nova Font.woff") format("woff");
+  src: local("Proxima Nova"), url("../font/FontsFree-Net-ProximaNova-Regular.woff") format("woff");
+  src: local("Proxima Nova"), url("../font/FontsFree-Net-Proxima-Nova-Bold.woff") format("woff");
+  src: local("Proxima Nova"), url("../font/FontsFree-Net-Proxima-Nova-Xbold.woff") format("woff");
+  src: local("Proxima Nova"), url("../font/FontsFree-Net-Proxima-Nova4light.woff") format("woff");
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'proxima nova';
+  line-height: 1;
+}
+img{
+  width: 100%;
+}
+
+.container{
+  max-width: 1299.71px;
+  width: 100%;
+  //padding: 0 15px;
+  //margin: 0 auto;
+}
+.home-container{
+  max-width: 1118px;
+  width: 100%;
+  //padding: 0 15px;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+}
+.trial-btn{
+  background: #41A6FF;
+  padding: 7px 11px;
+  border-radius: 2px;
+  font-weight: 700;
+}
+
+.reviews-number{
+  color: #333131;
+}
+
+ul,li{
+  text-decoration: none;
+  list-style: none;
+}
+
+  //
+  //.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  //  line-height: unset;
+  //}
+

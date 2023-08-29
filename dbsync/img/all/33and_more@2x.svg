@@ -1,0 +1,16 @@
+<svg id="and_more" data-name="and more" xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+  <g id="Rectangle_1489" data-name="Rectangle 1489" transform="translate(6 6)" fill="#12243b" stroke="#577caa" stroke-width="1">
+    <rect width="32" height="32" rx="3" stroke="none"/>
+    <rect x="0.5" y="0.5" width="31" height="31" rx="2.5" fill="none"/>
+  </g>
+  <g id="Rectangle_1488" data-name="Rectangle 1488" transform="translate(3 3)" fill="#11243b" stroke="#577caa" stroke-width="1">
+    <rect width="32" height="32" rx="3" stroke="none"/>
+    <rect x="0.5" y="0.5" width="31" height="31" rx="2.5" fill="none"/>
+  </g>
+  <rect id="Rectangle_995" data-name="Rectangle 995" width="32" height="32" rx="3" fill="#577caa"/>
+  <text id="AND_MORE-2" data-name="AND
+MORE" transform="translate(5 15)" fill="#fff" font-size="8" font-family="DINAlternate-Bold, DIN Alternate" font-weight="700"><tspan x="0" y="0">AND</tspan><tspan x="0" y="8">MORE</tspan></text>
+  <rect id="Rectangle_1490" data-name="Rectangle 1490" width="1" height="1" transform="translate(26 22)" fill="#fff"/>
+  <rect id="Rectangle_1491" data-name="Rectangle 1491" width="1" height="1" transform="translate(28 22)" fill="#fff"/>
+  <rect id="Rectangle_1492" data-name="Rectangle 1492" width="1" height="1" transform="translate(30 22)" fill="#fff"/>
+</svg>
