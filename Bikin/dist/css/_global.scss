@@ -1,0 +1,39 @@
+// Globale element style here
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  // font-family: "Mulish", sans-serif;
+  font-family: "Lato", sans-serif;
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+}
+
+// utility classes
+.container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+.btn {
+  border-radius: 5px;
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: $secondary-color;
+}
+.current,
+a:hover {
+  color: $primary-color;
+}
+
+.bold{
+  font-weight: bold;
+}

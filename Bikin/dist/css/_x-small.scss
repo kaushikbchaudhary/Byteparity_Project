@@ -1,0 +1,87 @@
+  // about media query
+  .about-section {
+    .about-overview{
+      .about-right{
+        grid-template-columns: none;
+      }
+    }
+  }
+
+  // box sections
+  .box{
+    .box-grid-container{
+      grid-template-columns: 1fr;
+      .box-grid-item,
+      .box-grid-item:nth-child(-n + 5){
+        padding: 10px 30px;
+        border-left: none;
+        border-bottom: 1px solid $nav-btn-bg;
+      }
+    }
+  }
+
+  .services{
+    .services-content{
+      .block-post-services{
+        grid-template-columns: 1fr;
+        gap: 10px 0;
+      }
+    }
+  }
+
+  //    portfolio
+  .portfolio-page{
+    .imgs-grid{
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+
+  // testimonial section
+  .testimonials {
+    .testimonial-section{
+      .testimonials-flex{
+        .person{
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  //    Team
+  .team{
+    .team-container{
+      .team-members{
+        grid-template-columns:1fr;
+      }
+    }
+  }
+
+  //    Pricing
+  .pricing{
+    .pricing-container {
+      .pricing-options{
+        grid-template-columns: 1fr;
+        gap: 15px 0;
+      }
+    }
+  }
+  //    Contact
+  .contact{
+    .contact-container{
+      .contact-info{
+        grid-template-columns: 1fr;
+        .address-card{
+          grid-column: 1;
+        }
+      }
+    }
+  }
+
+  //    Footer
+  .footer{
+    .footer-container{
+      .footer-link{
+        flex-direction: column;
+      }
+    }
+  }
