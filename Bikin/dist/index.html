@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <style>
+  @import url('./fonts/Lato/Lato-Regular.woff');
+</style> -->
+    <!-- slick slider extranal js library -->
+    <link rel="stylesheet" href="./css/slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/slick-1.8.1/slick/slick-theme.css" />
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.4.0-web/css/all.min.css">
+    <!-- free fontawesome -->
+    <link
+      rel="stylesheet"
+      data-purpose="Layout StyleSheet"
+      title="Web Awesome"
+      href="/css/app-wa-8c8d788ad0ee06dbc9619ff907c22651.css?vsn=d"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css"
+    />
+      <!-- font family-->
+     <link rel="stylesheet" href="./fonts/Lato/lateRegular.css">
+     <link rel="stylesheet" href="./css/main.css" />
+    <title>Bikin</title>
+      <link rel="stylesheet" href="../scss/_media.scss">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <h1><a class="logo" href="#home">Bikin</a></h1>
+          <div class="toggal-btn"><i class="fa-solid fa-bars"></i></div>
+          <ul>
+            <li><a href="#Home" target="_blank" class="current">Home</a></li>
+            <li><a href="#about" target="_blank">About</a></li>
+            <li><a href="#services" target="_blank">Services</a></li>
+            <li><a href="#" target="_blank">Portfolio</a></li>
+            <li><a href="#" target="_blank">Team</a></li>
+            <li><a href="#" target="_blank">Pricing</a></li>
+            <li class="drop-down-menu">
+              <p>Drop Down <i class="fa-thin fa-angle-down"></i></p>
+              <div class="dropdown-content">
+                <a>drop</a>
+                <a>down</a>
+                <a>menu</a>
+                <a>content</a>
+              </div>
+            </li>
+            <li><a href="#" target="_blank">Contact</a></li>
+            <button type="button" class="btn navbar-btn">Get Started</button>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section id="Home" class="banner-section">
+      <div class="container">
+        <div class="banner">
+          <h1 class="banner-heading">Build Better Websites With Bikin</h1>
+          <p class="banner-description">
+            We are team of talented designers making websites with Bootstrap
+          </p>
+          <button class="btn banner-btn">Get Started</button>
+          <img
+            src="./img/svg/in_the_office.svg"
+            alt=""
+            class="img banner-img"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- About section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-overview">
+          <!-- left side about description  -->
+          <div class="about-left">
+            <h3 class="about-left-heading">
+              voluptatem dignissimos <br />
+              provident quasi
+            </h3>
+            <p class="about-left-description">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum,
+              officiis omnis amet magnam nulla, quisquam animi, molestias
+              deleniti facere!
+            </p>
+            <button class="about-Us-btn">
+              About us <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+
+          <!-- right side cards -->
+          <div class="about-right">
+            <div class="card">
+              <div class="icon">
+                <i class="fa-solid fa-newspaper "></i>
+              </div>
+              <h4 class="card-heading">Newspaper</h4>
+              <p class="card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis , rem aliqu velit mollitia.
+              </p>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <i class="fa-regular fa-dice-d6 "></i>
+              </div>
+              <h4 class="card-heading">Dice view</h4>
+              <p class="card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis , rem aliqu velit mollitia.
+              </p>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <!-- <i class="fa fa-file-text" aria-hidden="true"></i> -->
+                <i class="fa-sharp fa-regular fa-images "></i>
+              </div>
+              <h4 class="card-heading">Image Gallary</h4>
+              <p class="card-description">
+                Lorem ipsum dolor sit amet consectetur.<br />
+                Veritatis rem aliqu velit mollitia.
+              </p>
+            </div>
+            <div class="card">
+              <div class="icon">
+                <!-- <i class="fa fa-file-text" aria-hidden="true"></i> -->
+                <i class="fa-sharp fa-regular fa-shield "></i>
+              </div>
+              <h4 class="card-heading">Safe and Secure</h4>
+              <p class="card-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis , rem aliqu velit mollitia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="brands">
+      <div class="container">
+        <!-- BRAND -->
+        <div class="brand">
+          <div class="brand-logo logo-1">
+            <img src="./img/logo/mahendraMoter.png" alt="Mahendra Moter" />
+          </div>
+          <div class="brand-logo logo-2">
+            <img src="./img/logo/rangeRover.png" alt="Range Rover" />
+          </div>
+          <div class="brand-logo logo-3">
+            <img src="./img/logo/tataMoter.png" alt="TataMoter" />
+          </div>
+          <div class="brand-logo logo-4">
+            <img src="./img/logo/pngwing.com (4).png" alt="Brand Logo" />
+          </div>
+          <div class="brand-logo logo-5">
+            <img
+              src="./img/logo/pngwing.com (5).png"
+              class="brand-logo"
+              alt="Brand Logo"
+            />
+          </div>
+          <div class="brand-logo logo-6">
+            <img
+              src="./img/logo/pngwing.com (6).png"
+              class="brand-logo"
+              alt=""
+            />
+          </div>
+          <!-- <div class="brand-logo logo-1"></div>   -->
+        </div>
+      </div>
+    </section>
+
+    <!-- section features  -->
+    <section class="features-section">
+      <div class="container">
+        <div class="features-container">
+          <h1 class="features-heading">Features</h1>
+          <p class="features-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa
+            dolores, cum odio vitae omnis quis ratione eaque. Aperiam tenetur
+            facilis rem eaque facilis rem eaque facilis rem eaque tempore nihil
+            quidem. Quis, similique voluptas. Nobis, veniam.
+          </p>
+          <div class="feature-items">
+            <img src="./img/svg/undraw_developer_activity_re_39tg.svg" alt="" />
+            <div class="items">
+              <h4 class="items-heading">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est,
+                eaque.
+              </h4>
+              <div class="items-description">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aspernatur commodi, iure distinctio sed alias delectus vel hic
+                  quos temporibus eos corrupti labore?
+                </p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-check"></i>Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>Lorem ipsum, dolor
+                    adipisicing elit.
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>Lorem ipsum, dolor elit.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="feature-items">
+            <img src="./img/svg/undraw_learning_sketching_nd4f.svg" alt="" />
+            <div class="items">
+              <h4 class="items-heading">
+                a expedita odit deleniti dolores illum esse dicta reiciendis
+                doloremque
+              </h4>
+              <div class="items-description">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aspernatur commodi, iure distinctio nihil inventore minus quo
+                  corporis iusto consequuntur necessitatibus, sed alias delectus
+                  vel hic quos temporibus eos corrupti labore?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Architecto magnam repudiandae dolorem, totam nulla
+                  consequuntur, a similique unde expedita commodi voluptatibus
+                  aspernatur beatae, nostrum corporis. Lorem ipsum, re dicta
+                  iste aliquid repudiandae illo non similique aspernatur.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="feature-items">
+            <img src="./img/svg/undraw_designer_life_re_6ywf.svg" alt="" />
+            <div class="items">
+              <h4 class="items-heading">
+                nesciunt quidem? Velit id quo in dolores labore eveniet omnis
+                natus!
+              </h4>
+              <div class="items-description">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aspernatur commodi, iure distinctio nihil inventore minus quo
+                  corporis iusto consequuntur necessitatibus, corrupti labore?
+                </p>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-check"></i>
+                    Mollitia neque consectetur iste quis magnam nobis veniam
+                    velit esse accusantium voluptates, sed unde?
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i> perspiciatis quos sit,
+                    officia id. Maiores tempora deserunt
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-check"></i>Lorem ipsum, dolor elit.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="feature-items">
+            <img src="./img/svg/undraw_teacher_re_sico.svg" alt="" />
+            <div class="items">
+              <h4 class="items-heading">
+                Architecto magnam repudiandae dolorem, totam nulla consequuntur
+                adipisicing elit
+              </h4>
+              <div class="items-description">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Aspernatur commodi, iure distinctio nihil inventore minus quo
+                  corporis iusto consequuntur necessitatibus, sed alias delectus
+                  vel hic quos temporibus eos corrupti labore?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Architecto magnam repudiandae dolorem, totam nulla
+                  consequuntur, a similique unde expedita commodi voluptatibus
+                  aspernatur beatae, nostrum corporis. Lorem ipsum, re dicta
+                  iste aliquid repudiandae illo non similique aspernatur.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          </div>
+      </div>
+    </section>
+
+          <!-- grid -->
+          <section class="box">
+            <div class="container">
+            
+          <div class="box-grid-container">
+            <div class="box-grid-item item-1">
+              <div class="box-number">01</div>
+              <h4>Lorem, ipsum</h4>
+              <p>
+                Lorem ipsum dolor repudiandae quasi, ut nihil eius tenetur
+                reprehenderit. At iste, fugit quasi ea.
+              </p>
+            </div>
+            <div class="box-grid-item item-2">
+              <div class="box-number">02</div>
+              <h4>Repellat Nihil</h4>
+              <p>
+                Lorem ipsum dolor repudiandae quasi, ut nihil eius tenetur
+                reprehenderit. At iste, fugit quasi ea.
+              </p>
+            </div>
+            <div class="box-grid-item item-3">
+              <div class="box-number">03</div>
+              <h4>Ad ad velit qui</h4>
+              <p>
+                Lorem ipsum dolor repudiandae quasi, ut nihil eius tenetur
+                reprehenderit. At iste, fugit quasi ea.
+              </p>
+            </div>
+            <div class="box-grid-item item-4">
+              <div class="box-number">04</div>
+              <h4>Repellendus molestiae</h4>
+              <p>
+                Lorem ipsum dolor repudiandae quasi, ut nihil eius tenetur
+                reprehenderit. At iste, fugit quasi ea.
+              </p>
+            </div>
+            <div class="box-grid-item item-5">
+              <div class="box-number">05</div>
+              <h4>Sapiente Magnam</h4>
+              <p>
+                Lorem ipsum dolor repudiandae quasi, ut nihil eius tenetur
+                reprehenderit. At iste, fugit quasi ea.
+              </p>
+            </div>
+            <div class="box-grid-item item-6">
+              <div class="box-number">06</div>
+              <h4>Facillis Impedit</h4>
+              <p>
+                Lorem ipsum dolor repudiandae quasi, ut nihil eius tenetur
+                reprehenderit. At iste, fugit quasi ea.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services">
+      <div class="container">
+        <div class="services-content">
+          <h1 class="services-heading">Services</h1>
+          <p class="services-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sed
+            iure, provident nulla veniam voluptates perspiciatis ad? Aliquam
+            modi voluptas laboriosam iusto itaque dicta, repudiandae ex,
+            voluptatem iure praesentium temporibus!
+          </p>
+          <div class="block-post-services">
+            <div class="services-post">
+              <div class="services-icon">
+                <i class="fa-sharp fa-light fa-basketball "></i>
+              </div>
+              <h5>Lorem ipsum</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid, molestiae!
+              </p>
+            </div>
+            <div class="services-post">
+              <div class="services-icon">
+                <i class="fa-light fa-file-lines "></i>
+              </div>
+
+              <h5>Lorem ipsum</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid, molestiae!
+              </p>
+            </div>
+            <div class="services-post">
+              <div class="services-icon"></div>
+                <i class="fa-light fa-gauge-high "></i>
+              <h5>Lorem ipsum</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid, molestiae!
+              </p>
+            </div>
+            <div class="services-post">
+              <div class="services-icon">
+                <i class="fa-light fa-diamond "></i>
+              </div>
+              <h5>Lorem ipsum</h5>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid, molestiae!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Portfolio -->
+    <div class="portfolio">
+      <div class="container">
+        <div class="portfolio-page">
+          <h1 class="portfolio-heading">Portfolio</h1>
+          <p class="portfolio-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            autem, dolorum quis error iure, inventore ad soluta fugiat iusto
+            doloribus non repudiandae nihil distinctio labore aliquid neque?
+            Omnis, animi ratione.
+          </p>
+          <div class="btns">
+            <a href="#" class="btn-filter current">ALL</a>
+            <a href="#" class="btn-filter">APP</a>
+            <a href="#" class="btn-filter">CARD</a>
+            <a href="#" class="btn-filter">WEB</a>
+          </div>
+          <div class="imgs-grid">
+            <img
+              src="./img/grid-img/pexels-andrea-piacquadio-3760263.jpg"
+              alt=""
+            />
+            <img src="./img/grid-img/pexels-canva-studio-3153207.jpg" alt="" />
+            <img src="./img/grid-img/pexels-george-milton-7015034.jpg" alt="" />
+            <img src="./img/grid-img/pexels-pixabay-147413.jpg" alt="" />
+            <img src="./img/grid-img/pexels-screen-post-4526416.jpg" alt="" />
+            <img src="./img/grid-img/pexels-screen-post-4526418.jpg" alt="" />
+            <img src="./img/grid-img/pexels-screen-post-4526429.jpg" alt="" />
+            <img src="./img/grid-img/pexels-screen-post-4526432.jpg" alt="" />
+            <img
+              src="./img/grid-img/pexels-tatiana-syrikova-3975571.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Testimoninals -->
+    <div class="testimonials">
+      <div class="container">
+        <div class="testimonial-section">
+          <h1 class="testimonial-heading">Testimonials</h1>
+          <p class="testimoinals-description">
+            Magnam ipsum dolor sit amet consectetur adipisicing elit. Illo iusto
+            hic libero, vel accusantium suscipit quos debitis? Porro mollitia
+            voluptate consequatur tenetur, omnis fuga consequatur tenetur, omnis fuga quae dolores maiores magni
+            modi ex!
+          </p>
+          <div class="testimonials-flex">
+            <div class="person">
+              <p class="person-intro">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorem itaque distinctio facilis dolores quia! Distinctio
+                aliquid nam, suscipit eos consequatur, deserunt esse
+                exercitationem architecto excepturi eaque accusantium soluta
+                laudantium expedita!
+              </p>
+              <img
+                src="./img/testimonials/pexels-andrea-piacquadio-774909.jpg"
+                alt="person-1"
+              />
+              <h6>Sara wilsson</h6>
+              <p>Designers</p>
+            </div>
+            <div class="person">
+              <p class="person-intro">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorem itaque distinctio facilis dolores quia! Distinctio
+                aliquid nam, suscipit eos consequatur, deserunt esse
+                exercitationem architecto excepturi eaque accusantium soluta
+                laudantium expedita!
+              </p>
+              <img
+                src="./img/testimonials/pexels-andrea-piacquadio-834863.jpg"
+                alt="person-2"
+              />
+              <h6>Jena Karlis</h6>
+              <p>Store Owners</p>
+            </div>
+            <div class="person">
+              <p class="person-intro">
+                Fugiat, ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorem itaque distinctio facilis dolores quia! Distinctio
+                aliquid nam, suscipit eos consequatur, deserunt esse
+                exercitationem architecto excepturi eaque accusantium soluta
+                laudantium expedita!
+              </p>
+              <img
+                src="./img/testimonials/pexels-pixabay-220453.jpg"
+                alt="person-3"
+              />
+              <h6>Matt Brandon</h6>
+              <p>Freelancer</p>
+            </div>
+            <div class="person">
+              <p class="person-intro">
+                Epsem, ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorem itaque distinctio facilis dolores quia! Distinctio
+                aliquid nam, suscipit eos consequatur, deserunt esse
+                exercitationem architecto excepturi eaque accusantium soluta
+                laudantium expedita!
+              </p>
+              <img
+                src="./img/testimonials/pexels-edmond-dantès-4342400.jpg"
+                alt="person-1"
+              />
+              <h6>sara wilsson</h6>
+              <p>Designers</p>
+            </div>
+            <div class="person">
+              <p class="person-intro">
+                Export, ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorem itaque distinctio facilis dolores quia! Distinctio
+                aliquid nam, suscipit eos consequatur, deserunt esse
+                exercitationem architecto excepturi eaque accusantium soluta
+                laudantium expedita!
+              </p>
+              <img
+                src="./img/testimonials/pexels-daniel-xavier-1121796.jpg"
+                alt="person-2"
+              />
+              <h6>Jena Karlis</h6>
+              <p>Store Owner</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team -->
+    <section class="team">
+      <div class="container">
+        <div class="team-container">
+          <h1 class="team-heading">Team</h1>
+          <p class="team-intro">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+            temporibus officia consectetur harum nisi earum doloremque!
+            Repellendus deleniti pariatur odit ea eaque, alias asperiores velit
+            debitis, fugiat illum, voluptatem sit!
+          </p>
+          <div class="team-members">
+            <img
+              src="./img/testimonials/pexels-polina-zimmerman-3746939.jpg"
+              alt="Sara wilsson"
+            />
+            <img src="./img/testimonials/pexels-pixabay-220453.jpg" alt="" />
+            <img
+              src="./img/testimonials/pexels-andrea-piacquadio-774909.jpg"
+              alt="Matt Brandon"
+            />
+            <img
+              src="./img/testimonials/pexels-dellon-thomas-2216607.jpg "
+              alt="Jena Karlis"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing">
+      <div class="container">
+        <div class="pricing-container">
+          <h1 class="pricing-heading">Pricing</h1>
+          <p class="pricing-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+            temporibus officia consectetur harum nisi earum doloremque!
+            Repellendus deleniti pariatur odit ea eaque, deleniti pariatur odit ea eaque, alias asperiores velit
+            debitis, fugiat illum, voluptatem sit!
+          </p>
+          <div class="pricing-options">
+            <div class="options">
+              <h6 class="opt-heading">FREE</h6>
+              <p class="subscription"><span class="price">
+                <sup><code class="sign">$</code></sup 
+                >0</span><sub class="per-month"><code >/ month</code></sub>
+              </p>
+              <div class="features">
+              <p>Aide dere</p>
+              <p>Nec feugiat nisi</p>
+              <p>Null at volupat das</p>
+              <p><s>Pharetra massa</s></p>
+              <p><s>massa ultrices mi</s></p>
+              </div>
+              <button class="btn-buy">Buy now</button>
+            </div>
+            <div class="options">
+              <h6 class="opt-heading">BUSINESS</h6>
+              <p class="subscription"><span class="price">
+                <sup><code class="sign">$</code></sup 
+                >19</span><sub class="per-month"><code >/ month</code></sub>
+              </p>
+              <div class="features">
+              <p>Aide dere</p>
+              <p>Nec feugiat nisi</p>
+              <p>Null at volupat das</p>
+              <p >Pharetra massa</p>
+              <p><s>massa ultrices mi</s></p>
+              </div>
+              <button class="btn-buy">Buy now</button>
+            </div>
+            <div class="options">
+              <h6 class="opt-heading">DEVELOPER</h6>
+              <p class="subscription"><span class="price">
+                <sup><code class="sign">$</code></sup 
+                >29</span><sub class="per-month"><code >/ month</code></sub>
+              </p>
+             
+              <div class="features">
+              <p>Aide dere</p>
+              <p>Nec feugiat nisi</p>
+              <p>Null at volupat das</p>
+              <p >Pharetra massa</p>
+              <p >massa ultrices mi</p>
+              </div>
+              <button class="btn-buy">Buy now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Frequently Asked Questions -->
+    <section class="faq-section">
+      <div class="container">
+        <h1 class="faq-heading">Frequently Asked Questions</h1>
+        <div class="faq-container">
+          <div class="faq">
+            <button class="accordion"><i class="icon fa-thin fa-angle-down"></i>Fugiat enim eram quae cillum enim eram quae cillum dolor?</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ea. Consequuntur obcaecati doloribus dignissimos dolore laborum, blanditiis fugit iste neque dolorum placeat consectetur dolorem illum, voluptatibus assumenda ullam ipsum esse?</p>
+            </div>
+          </div>
+          <div class="faq">
+            <button class="accordion"><i class="icon fa-thin fa-angle-down"></i>dolore laborum, blanditiis fugit enim eram quae cillum iste neque doloru?</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ea. Consequuntur obcaecati doloribus dignissimos dolore laborum, blanditiis fugit iste neque dolorum placeat consectetur dolorem illum, voluptatibus assumenda ullam ipsum esse?</p>
+            </div>
+          </div>
+          <div class="faq">
+            <button class="accordion"><i class="icon fa-thin fa-angle-down"></i>Aliquam, ea. enim eram quae cillum Consequuntur obcaecat?</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ea. Consequuntur obcaecati doloribus dignissimos dolore laborum, blanditiis fugit iste neque dolorum placeat consectetur dolorem illum, voluptatibus assumenda ullam ipsum esse?</p>
+            </div>
+          </div>
+          <div class="faq">
+            <button class="accordion"><i class="icon fa-thin fa-angle-down"></i>enim eram quae cillum Fugiat enim eram quae cillum dolor?</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ea. Consequuntur obcaecati doloribus dignissimos dolore laborum, blanditiis fugit iste neque dolorum placeat consectetur dolorem illum, voluptatibus assumenda ullam ipsum esse?</p>
+            </div>
+          </div>
+          <div class="faq">
+            <button class="accordion"><i class="icon fa-thin fa-angle-down"></i>consectetur adipisicing enim eram quae cillum elit. Aliquam, ea. Consequuntu?</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ea. Consequuntur obcaecati doloribus dignissimos dolore laborum, blanditiis fugit iste neque dolorum placeat consectetur dolorem illum, voluptatibus assumenda ullam ipsum esse?</p>
+            </div>
+          </div>
+          <div class="faq">
+            <button class="accordion"><i class="icon fa-thin fa-angle-down"></i>sit amet consectetur adipisicing elit. Aliquam, ea?</button>
+            <div class="panel">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, ea. Consequuntur obcaecati doloribus dignissimos dolore laborum, blanditiis fugit iste neque dolorum placeat consectetur dolorem illum, voluptatibus assumenda ullam ipsum esse?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- Contact -->
+    <section class="contact">
+      <div class="container">
+        <h1 class="contact-heading">Contact</h1>
+        <p class="contact-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae recusandae distinctio fugiat porro blanditiis perferendis alias ducimus possimus tempore aut architecto tempora qui natus similique odit dolorum, commodi quidem necessitatibus!</p>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="address-card">
+              <i class="fa-sharp fa-regular fa-location-dot"></i>
+              <h3 class="location-heading">Our Address</h3>
+              <address class="address">A108 Adam Street,Now York,NY 535022</address>
+            </div>
+            <div class="email-card">
+              <i class="fa-sharp fa-regular fa-envelope"></i>
+              <h3 class="email-heading">Email Us</h3>
+            <a class="email" href = "mailto: byteparity@example.com">byteparity@example.com</a>
+            <a class="email" href = "mailto: info@example.com">info@example.com</a>
+            </div>
+            <div class="contact-number">
+              <i class="fa-regular fa-phone-volume"></i>
+              <h3 class="email-heading">Call Us</h3>
+              <a class="mo-number" href="tel:+155895548855">+1 5589 55488 55</a>
+              <a class="mo-number" href="tel:+1667825444541">+1 6678 254445 41</a>
+            </div>
+          </div>
+            <form >
+               <div class="contact-form">
+               <div class="name">
+                <input type="text" placeholder="Your Name">
+              </div>
+              <div class="email">
+                <input type="text" placeholder="Your Email">
+              </div>
+              <div class="subject">
+                <input type="text" placeholder="Subject">
+              </div>
+              <div class="message">
+                <textarea name="message" id="message" cols="30" rows="6" placeholder="Message"></textarea>
+              </div>  
+              <button class="send-btn">Send Messae</button>
+            </div>
+            </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-address">
+            <h5 class="address-heading">Bikin</h5>
+            <address class="address">A108 Adam Street <br> New york,NY 535022 <br> United States</address>
+            <a href="tel+155895548855" class="mo-number phone"><span class="phone-label">Phone:</span>+1 5589 55488 55</a>
+            <a class="email" href = "mailto: byteparity@example.com"><span class="email-label">email:</span>byteparity@example.com</a>
+          </div>
+          <div class="footer-link">
+            <div class="useful-links">
+              <h6 class="footer-heading">useful-links</h6>
+              <a href="#" class="f-link"><i class="fa-regular fa-chevron-right"></i>Home</a>
+              <a href="#" class="f-link"><i class="fa-regular fa-chevron-right"></i>About Us</a>
+              <a href="#" class="f-link"><i class="fa-regular fa-chevron-right"></i>Services</a>
+              <a href="#" class="f-link"><i class="fa-regular fa-chevron-right"></i>Terms of services</a>
+              <a href="#" class="f-link"><i class="fa-regular fa-chevron-right"></i>Privacy policy</a>
+            </div>
+            <div class="our-services">
+              <h6 class="footer-heading">Our Services</h6>
+              <a href="#" class="f-link"><i class="fa-regular fa-chevron-right"></i>web Design</a>
+              <a href="#" class="f-link"><i class="fa-regular fa-chevron-right"></i>Web Development</a>
+              <a href="#" class="f-link"><i class="fa-regular fa-chevron-right"></i>Product Management</a>
+              <a href="#" class="f-link"><i class="fa-regular fa-chevron-right"></i>Marketing</a>
+              <a href="#" class="f-link"><i class="fa-regular fa-chevron-right"></i>Ghraphic Design</a>
+            </div>
+          </div>
+          <div class="footer-newsletter">
+            <h6 class="footer-heading">Join Our Newsletter</h6>
+            <p class="footer-news-description">Aliquid corporis rerum at doloribus, dolores est ad eum eaque explicabo dolore iste ipsum et.</p>
+            <form action="#">
+              <input type="email">
+             <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="footer-social">
+      <div class="container">
+        <div class="footer-item">
+          <p>&copy; Copyright <b>Bikin</b>. All Rights Reserved Designed by <a href="#">bootstrapMade</a></p>
+          <div class="social-icon">
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript files -->
+    <script
+      type="text/javascript"
+      src="./css/slick-1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/script.js"></script>
+    <!-- <script src="./fontawesome-free-6.4.0-web/js/fontawesome.min.js"></script> -->
+  </body>
+</html>
