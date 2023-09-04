@@ -1,0 +1,39 @@
+.product-section{
+  padding: 36px 0 44px;
+
+  .product-description{
+    font-size: 24px;
+    margin-bottom: 35px;
+  }
+}
+.slick-dotted.slick-slider {
+  margin-bottom:0;
+
+}
+.our_products{
+  flex-direction: column;
+
+  .pro_card{
+    h2{
+      font-weight: 900;
+      margin-bottom: 14px;
+    }
+    img{
+      margin-bottom: 14px;
+    }
+    p{
+      margin-bottom: 29px;
+    }
+  }
+}
+
+
+.slick-dots li button{
+  &:before {
+    font-size:8px;
+    color: #41A6FF;
+  }
+}
+.slick-dots li.slick-active button:before {
+  color: #41A6FF;
+}

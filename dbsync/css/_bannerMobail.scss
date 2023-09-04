@@ -1,0 +1,29 @@
+
+.banner-img{
+  padding: 40px 0;
+
+  .hero-section{
+    h1{
+      font-size: 24px;
+      word-spacing: -0.48px;
+      line-height: 28px;
+      margin-bottom: 6px;
+    }
+    p{
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 40px;
+    }
+    .show-case{
+      grid-template-columns: repeat(7,1fr);
+      display: flex;
+      flex-wrap: wrap;
+      width: 296px;
+      margin-bottom: 25px;
+    }
+
+    .banner-btn{
+      display: none;
+    }
+  }
+}

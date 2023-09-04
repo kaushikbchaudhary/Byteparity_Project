@@ -15,7 +15,7 @@
 body{
   font-family: 'proxima nova';
   line-height: 1;
-}
+  }
 img{
   width: 100%;
 }
@@ -23,14 +23,15 @@ img{
 .container{
   max-width: 1299.71px;
   width: 100%;
-  //padding: 0 15px;
-  //margin: 0 auto;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 .home-container{
   max-width: 1118px;
   width: 100%;
-  //padding: 0 15px;
   margin: 0 auto;
+  padding: 0 15px;
+
 }
 
 a{
@@ -51,9 +52,4 @@ ul,li{
   text-decoration: none;
   list-style: none;
 }
-
-  //
-  //.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-  //  line-height: unset;
-  //}
 

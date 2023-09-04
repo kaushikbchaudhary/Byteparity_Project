@@ -1,0 +1,75 @@
+
+// Banner section styling start here
+.banner-img{
+  position: relative;
+  background-image: url("../img/banner/creative-background-with-white-lines@2x.png");
+  background-size: cover;
+  width: 100%;
+  padding: 45px 0 61px;
+  z-index: -2;
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    opacity: 0.8;
+    background-color: #142a44;
+    width: 100%;
+    height: 100%;
+    z-index: -1 ;
+  }
+
+  .hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    h1{
+      font-size: 36px;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+      line-height: 1.16;
+      word-spacing: -0.75px;
+      font-weight: 900;
+      span{
+        color: #2ECAA2;
+        display: block;
+      }
+    }
+    p{
+      color: #FFFFFF;
+      font-size: 20px;
+      line-height:1.2;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+    .show-case{
+      display: grid;
+      grid-template-columns: repeat(11,1fr);
+      gap: 4px 5px;
+      margin-bottom: 32px;
+      align-items: center;
+      justify-content: center;
+
+      img{
+        width: 38px;
+        border-radius: 3px;
+      }
+    }
+    .banner-btn{
+      padding: 12.5px 32px;
+      border: none;
+      border-radius: 2px;
+      background-color: #41A6FF;
+      margin-bottom: 45px;
+      color: #FFFFFF;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16px;
+    }
+
+  }
+}
+// Banner section styling End here
