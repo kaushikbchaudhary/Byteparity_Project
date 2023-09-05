@@ -1,7 +1,12 @@
-
-.home-ratings{
+.panel{
   position: absolute;
   bottom: -58px;
+  width: 100%;
+
+}
+.home-ratings{
+  //position: absolute;
+  //bottom: -58px;
   background-color: #FFFFFF;
   padding: 22px 77px;
   max-width: 1088px;

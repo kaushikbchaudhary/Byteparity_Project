@@ -252,9 +252,13 @@ header {
   line-height: 16px;
 }
 
-.home-ratings {
+.panel {
   position: absolute;
   bottom: -58px;
+  width: 100%;
+}
+
+.home-ratings {
   background-color: #FFFFFF;
   padding: 22px 77px;
   max-width: 1088px;
@@ -752,6 +756,9 @@ header {
   }
   .banner-img .hero-section .banner-btn {
     display: none;
+  }
+  .panel {
+    padding: 0 15px;
   }
   .home-ratings {
     bottom: -51px;

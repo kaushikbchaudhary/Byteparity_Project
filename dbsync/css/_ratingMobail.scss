@@ -1,3 +1,7 @@
+.panel{
+  padding:0 15px;
+}
+
 .home-ratings{
   //display: none;
   bottom: -51px;
@@ -9,8 +13,6 @@
   justify-content: space-around;
   .rating-box{
     width: 108px;
-
-    //margin: 14px 0 15px;
 
     .rating-img{
       margin-bottom: 4px;
