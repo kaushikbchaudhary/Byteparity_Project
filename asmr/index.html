@@ -5,7 +5,8 @@
     <title>ASMR</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/main.css">
+    <!-- <link rel="stylesheet" href="./css/main.css"> -->
+    <link rel="stylesheet" href="./dist/css/main.css">
 </head>
 <body>
     <div class="container">
@@ -167,11 +168,90 @@
                 <a href="#">Show All</a>
             </div>
             <!--End Of Recent Order-->
-
         </main>
-    </div>
-<script src="index.js"></script>
-<script src="order.js"></script>
+        <!--End Of Main Content-->
+
+        <!-- Right section -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Reza</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="img/profile-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>   
+            <!-- End of Navbar -->
+
+            <div class="user-profile">
+                <div class="logo">
+                    <img src="./img/logo.png" alt="">
+                    <h2>Asmr prog</h2>  
+                    <p>Fullstack Web Developer</p>
+                </div>
+            </div>
+
+            <div class="reminders">
+
+                <div class="header">
+                    <h2>Reminders</h2>
+                    <span class="material-icons-sharp"> notifications_none </span>
+                </div>
+
+                <div class="notification ">
+                    <div class="icon">
+                        <span class="material-icons-sharp">volume_up</span>
+                    </div>
+
+                    <div class="content">
+                        <div class="info">
+                            <h3>workshop</h3>
+                            <small class="text_muted">
+                                08:00 AM - 12:00 PM
+                            </small>                            
+                        </div>
+                        <span class="material-icons-sharp">more_vert</span>
+                    </div>
+                </div>
+
+                <div class="reminders">
+                    <div class="notification deactive">
+                        <div class="icon">
+                            <span class="material-icons-sharp">edit</span>
+                        </div>
+
+                        <div class="content">
+                            <div class="info">
+                                <h3>workshop</h3>
+                                <small class="text_muted">
+                                    08:00 AM - 12:00 PM
+                                </small>                        
+                            </div> 
+                            <span class="material-icons-sharp">more_vert</span>
+                        </div>
+                    </div>
+                
+                    <div class="notification add-reminders">
+                        <div>
+                            <span class="material-icons-sharp"> add  </span>
+                            <h3>Add Reminders</h3>
+                        </div>
+                    </div>
+                </div>                        
+            </div>
+        </div>
+    <script src="order.js"></script>
+    <script src="index.js"></script>
 
 </body>
 </html>
