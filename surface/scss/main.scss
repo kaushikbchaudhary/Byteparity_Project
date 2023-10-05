@@ -20,15 +20,15 @@ img{
     width: 100%;
 }
 
-a{
+a,a:hover{
     text-decoration: none;
 }
-.container{
-    max-width: 1148px;
-    width: 100%;
-    padding:0 5px;
-    margin: 0 auto;
-}
+// .container{
+    // max-width: 1148px;
+    // width: 100%;
+    // padding:0 5px;
+    // margin: 0 auto;
+// }
 .section_title{
 
     font-weight: bold;
@@ -132,6 +132,7 @@ a{
                 .activeTab{
                     font-weight: bold;
                     color: #42A5F8;
+                    text-decoration: none;
                 }
         }
 
@@ -143,7 +144,7 @@ a{
                 background-position: 10px 10px;
                 background-repeat: no-repeat;
                 border: 1px solid #E8E8E8;
-                width: 273px;
+                // max-width: 273px;
                 padding: 10px 20px 10px 42px;
                 color: #BDBDBD;
             }
@@ -164,7 +165,8 @@ a{
             justify-content: space-between;
             border: 1px solid #E0E0E0;
             padding: 20.9px 50px 20.5px 25px;
-            max-width: 372px;
+            // margin-right: 16px;
+            // max-width: 372px;
 
             .brand__icon{
                 img{
@@ -184,7 +186,7 @@ a{
     }
     .activeTabContent{
     // visibility: visible;
-    display: flex;
+    display: block;
     }
 }
 
@@ -208,4 +210,76 @@ a{
             }
         }
     }
+}
+
+.leadership-recognition{
+    padding: 66px 0;
+
+    .leaddership_performer{
+        display: flex;
+        justify-content: space-between;
+    
+        .performer_img{
+            display: flex;
+            justify-content: space-around;
+        
+            img{
+                max-width: 128px;
+            }
+        }
+
+        .leadership_content{
+
+            .leadership_content_description{
+                font-size: 24px;
+                color: #212121;
+                margin-bottom: 17px;
+            }
+            p{
+                font-size: 16px;
+                color: #575A65;
+                line-height: 24px;
+            }
+        }
+    }
+
+}
+
+.cloud_workFlow{
+    background-color: #F5F9FC;
+    padding: 60px 0;
+
+    .section_title{
+        margin-bottom: 31px;
+    }
+    .workflow_cards{
+        // gap: 21px;
+        .workflow_card{
+            // padding: 30px 51px 30px 30px;
+            padding: 30px;
+            background-color: #FFFFFF;
+
+            .card_description{
+                color: #188AE2;
+                font-size: 16px;
+                font-weight: bold;
+                margin-bottom: 19px;
+            }
+
+            .card_content{
+                color: #575A65;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.case_study{
+    padding: 60px 0;
+
+    .section_title{
+        margin-bottom: 30px;
+    }
+    
 }

@@ -39,6 +39,10 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
       <link rel="stylesheet" href="./css/main.css">
 
+
+      <!-- Latest compiled and minified JavaScript -->
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script defer src="./script.js"></script>
 </head>
 <body>
     <section class="banner-home">
@@ -67,7 +71,7 @@
             <h1 class="section_title">Popular Integrations</h1>
             <div class="tabs">
                 <ul>
-                    <li><a data-tab="popular" class="activeTab" href="#">Most Popular</a></li>
+                    <li><a data-tab="popular" class="activeTab" href="#mostPopular">Most Popular</a></li>
                     <li><a data-tab="crm" href="#crm">CRM</a></li>
                     <li><a data-tab="accounting" href="#accounting">Accounting</a></li>
                     <li><a data-tab="service" href="#service">Service & Support</a></li>
@@ -84,53 +88,63 @@
             </div>
 
             
-            <div class="tab__content activeTabContent popular">
-                <div class="ticket" data-slide="0">
+            <div class="tab__content row activeTabContent popular">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" data-slide="0">
+                    <div class="ticket">
                     <div class="brand__icon">
                         <img src="../img/brandImg.png" alt="brand__Img">
                     </div>
                     <div class="ticket__description">
                         <p>Salesforce and QuickBooks Online Integration</p>
                         <a href="#">Learn More <i class="fa-thin fa-chevron-right"></i></a>
+                    </div>
                     </div>
                 </div>
-                <div class="ticket" data-slide="1">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" data-slide="1">
+                    <div class="ticket">
                     <div class="brand__icon">
                         <img src="../img/brandImg.png" alt="brand__Img">
                     </div>
                     <div class="ticket__description">
                         <p>Salesforce and QuickBooks Online Integration</p>
                         <a href="#">Learn More <i class="fa-thin fa-chevron-right"></i></a>
+                    </div>
                     </div>
                 </div>
-                <div class="ticket" data-slide="2">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" data-slide="2">
+                    <div class="ticket">
                     <div class="brand__icon">
-                        <img src="../img/brandImg.png" alt="brand__Img">
+                        <img src="../img/brandImg.png" alt="brand__Img"> 
                     </div>
                     <div class="ticket__description">
                         <p>Salesforce and QuickBooks Online Integration</p>
                         <a href="#">Learn More <i class="fa-thin fa-chevron-right"></i></a>
+                    </div>
                     </div>
                 </div>
             </div>
 
-            <div class="tab__content crm">
-                <div class="ticket" data-slide="0">
+            <div class="tab__content row crm">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" data-slide="0">
+                    <div class="ticket">
                     <div class="brand__icon">
                         <img src="../img/brandImg.png" alt="brand__Img">
                     </div>
                     <div class="ticket__description">
                         <p>Salesforce and QuickBooks Online Integration</p>
                         <a href="#">Learn More <i class="fa-thin fa-chevron-right"></i></a>
+                    </div>
                     </div>
                 </div>
-                <div class="ticket" data-slide="1">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4" data-slide="1">
+                    <div class="ticket">
                     <div class="brand__icon">
                         <img src="../img/brandImg.png" alt="brand__Img">
                     </div>
                     <div class="ticket__description">
                         <p>Salesforce and QuickBooks Online Integration</p>
                         <a href="#">Learn More <i class="fa-thin fa-chevron-right"></i></a>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -150,11 +164,55 @@
 
     <section class="leadership-recognition">
         <div class="container">
-
+            <div class="leaddership_performer">
+                <div class="performer_img col-sm-6">
+                    <img src="../img/g1.png" alt="performer Img">
+                    <img src="../img/g2.png" alt="performer Img">
+                    <img src="../img/g3.png" alt="performer Img">
+                </div>
+                <div class="leadership_content col-sm-6">
+                    <h4 class="leadership_content_description">Leading the Way with G2 Recognition</h4>
+                    <p>Witness the impact of G2 recognition on our journey, as we continually strive to lead, innovate, and exceed expectations.</p>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <script src="./script.js"></script>
+
+    <!-- Cloud Work flow section -->
+    <section class="cloud_workFlow">
+        <div class="container">
+            <h2 class="section_title">Cloud workflow Impact</h2>
+            <div class="workflow_cards row">
+                <div class="col-xs-12 col-sm-4">
+                    <div class="workflow_card">
+                    <p class="card_description">30% Reduction in Cycle Time</p>
+                    <p class="card_content">With seamless data integration, ensuring real-time availability of crucial sales data and analytics.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="workflow_card">
+                    <p class="card_description">Up to 25% Higher Cash Flows</p>
+                    <p class="card_content">Automating invoicing and payments processes, thereby improving cash flow.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div class="workflow_card">
+                    <p class="card_description">2500+ Hours Time Saved Annually</p>
+                    <p class="card_content">No more tedious hours spent on manual data entry, error rectifications, and data reconciliations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case studies -->
+    <section class="case_study">
+        <div class="container">
+            <h2 class="section_title">Case Studies</h2>
+            
+        </div>
+    </section>
+
+    
 </body>
 </html>

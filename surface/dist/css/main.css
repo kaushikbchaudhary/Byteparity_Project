@@ -21,15 +21,8 @@ img {
   width: 100%;
 }
 
-a {
+a, a:hover {
   text-decoration: none;
-}
-
-.container {
-  max-width: 1148px;
-  width: 100%;
-  padding: 0 5px;
-  margin: 0 auto;
 }
 
 .section_title {
@@ -117,6 +110,7 @@ a {
 .integrations .tabs ul .activeTab {
   font-weight: bold;
   color: #42A5F8;
+  text-decoration: none;
 }
 .integrations .tabs .search__bar input {
   font-size: 15px;
@@ -124,7 +118,6 @@ a {
   background-position: 10px 10px;
   background-repeat: no-repeat;
   border: 1px solid #E8E8E8;
-  width: 273px;
   padding: 10px 20px 10px 42px;
   color: #BDBDBD;
 }
@@ -139,7 +132,6 @@ a {
   justify-content: space-between;
   border: 1px solid #E0E0E0;
   padding: 20.9px 50px 20.5px 25px;
-  max-width: 372px;
 }
 .integrations .tab__content .ticket .brand__icon img {
   width: 80px;
@@ -154,7 +146,7 @@ a {
   margin-bottom: 10.6px;
 }
 .integrations .activeTabContent {
-  display: flex;
+  display: block;
 }
 
 .announcement {
@@ -173,4 +165,59 @@ a {
 }
 .announcement .announcement__content p .author {
   display: block;
+}
+
+.leadership-recognition {
+  padding: 66px 0;
+}
+.leadership-recognition .leaddership_performer {
+  display: flex;
+  justify-content: space-between;
+}
+.leadership-recognition .leaddership_performer .performer_img {
+  display: flex;
+  justify-content: space-around;
+}
+.leadership-recognition .leaddership_performer .performer_img img {
+  max-width: 128px;
+}
+.leadership-recognition .leaddership_performer .leadership_content .leadership_content_description {
+  font-size: 24px;
+  color: #212121;
+  margin-bottom: 17px;
+}
+.leadership-recognition .leaddership_performer .leadership_content p {
+  font-size: 16px;
+  color: #575A65;
+  line-height: 24px;
+}
+
+.cloud_workFlow {
+  background-color: #F5F9FC;
+  padding: 60px 0;
+}
+.cloud_workFlow .section_title {
+  margin-bottom: 31px;
+}
+.cloud_workFlow .workflow_cards .workflow_card {
+  padding: 30px;
+  background-color: #FFFFFF;
+}
+.cloud_workFlow .workflow_cards .workflow_card .card_description {
+  color: #188AE2;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 19px;
+}
+.cloud_workFlow .workflow_cards .workflow_card .card_content {
+  color: #575A65;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.case_study {
+  padding: 60px 0;
+}
+.case_study .section_title {
+  margin-bottom: 30px;
 }/*# sourceMappingURL=main.css.map */
