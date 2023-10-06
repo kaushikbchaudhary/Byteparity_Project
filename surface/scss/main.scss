@@ -186,6 +186,7 @@ a,a:hover{
                 line-height: 20px;
                 p{
                     margin-bottom: 4.6px;
+                    font-weight: 600;
                 }
                 a{
                     font-size: 16px;
@@ -329,6 +330,53 @@ a,a:hover{
                     }
                 }
             }
+        }
     }
+}
+
+.our-customers{
+    padding: 67px 0 104.71px;
+    background-color: #F5F9FC;
+
+    .section_title{
+        margin-bottom: 63px;
     }
+
+    .feedback-container{
+        display: flex;
+        gap: 18px   ;
+
+        .customer-feedback{
+            padding: 30px;
+            background-color: #FFFFFF;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .quote_icon{
+                color: #30D293;
+                font-size: 20px;
+            }
+
+            .customer-feedback-text{
+                font-size: 16px;
+                color: #575A65;
+                line-height: 24px;
+            }
+
+            .customer_intro{
+                display: flex;
+                gap: 20px;
+
+                .customer-image{
+                    width: 50px;
+                }
+
+                .customer-name{
+                    font-size: 16px;
+                    align-self: center;
+                }
+            }
+        }
+    }
+
 }

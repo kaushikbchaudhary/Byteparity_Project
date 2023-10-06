@@ -31,15 +31,15 @@ tabContainer.addEventListener('click', function (e) {
     };
 });
 
-const case_about = function () {
-    const allCase = document.querySelectorAll(".case_about");
-    let max = 0;
-    allCase.forEach(caseHeight => {
-        const paragraphHeight = caseHeight.getBoundingClientRect().height;
-        (paragraphHeight > max) && (max = paragraphHeight);
-    });
-    allCase.forEach(caseAbout => {
-        caseAbout.style.height = `${max}px`;
-    });
-};
-case_about();
+// const case_about = function () {
+//     const allCase = document.querySelectorAll(".case_about");
+//     let max = 0;
+//     allCase.forEach(caseHeight => {
+//         const paragraphHeight = caseHeight.getBoundingClientRect().height;
+//         (paragraphHeight > max) && (max = paragraphHeight);
+//     });
+//     allCase.forEach(caseAbout => {
+//         caseAbout.style.height = `${max}px`;
+//     });
+// };
+// case_about();

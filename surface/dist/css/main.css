@@ -168,6 +168,7 @@ a, a:hover {
 }
 .integrations .tab__content .ticket .ticket__description p {
   margin-bottom: 4.6px;
+  font-weight: 600;
 }
 .integrations .tab__content .ticket .ticket__description a {
   font-size: 16px;
@@ -277,4 +278,43 @@ a, a:hover {
 }
 .case_study .testimonial_container .testimonial_caseStudy .testimonial_content a i {
   font-size: 13px;
+}
+
+.our-customers {
+  padding: 67px 0 104.71px;
+  background-color: #F5F9FC;
+}
+.our-customers .section_title {
+  margin-bottom: 63px;
+}
+.our-customers .feedback-container {
+  display: flex;
+  gap: 18px;
+}
+.our-customers .feedback-container .customer-feedback {
+  padding: 30px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.our-customers .feedback-container .customer-feedback .quote_icon {
+  color: #30D293;
+  font-size: 20px;
+}
+.our-customers .feedback-container .customer-feedback .customer-feedback-text {
+  font-size: 16px;
+  color: #575A65;
+  line-height: 24px;
+}
+.our-customers .feedback-container .customer-feedback .customer_intro {
+  display: flex;
+  gap: 20px;
+}
+.our-customers .feedback-container .customer-feedback .customer_intro .customer-image {
+  width: 50px;
+}
+.our-customers .feedback-container .customer-feedback .customer_intro .customer-name {
+  font-size: 16px;
+  align-self: center;
 }/*# sourceMappingURL=main.css.map */
