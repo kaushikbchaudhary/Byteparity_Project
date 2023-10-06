@@ -1,8 +1,12 @@
 // Globel styling
 *{
     padding: 0;
-    margin: 0;
+    margin: 0 ;
     box-sizing: border-box;
+}
+p{
+    margin: 0;
+    padding: 0;
 }
 body{
   font-family: "Proxima Nova";
@@ -23,14 +27,12 @@ img{
 a,a:hover{
     text-decoration: none;
 }
-// .container{
-    // max-width: 1148px;
-    // width: 100%;
-    // padding:0 5px;
-    // margin: 0 auto;
-// }
+.container{
+    max-width: 1148px;
+    width: 100%;
+    margin: 0 auto;
+}
 .section_title{
-
     font-weight: bold;
     text-align: center;
     font-size: 24px;
@@ -39,19 +41,15 @@ a,a:hover{
 
 // banner style start here
 .banner-home{
-    background-color: #152C48;
-
+    // background-color: #152C48;
+    // background-image: url('../img/cwcr_header_banner_bg.png') center center/cover no-repeat;
+    background: url('../img/cwcr_header_banner_bg.png') center center/cover no-repeat;
     color: #FFFFFF;
 
 }
 .banner-content{
-    // display: flex;
-    // justify-content: space-between;
     padding: 94.75px 0;
-
-
     .banner-left{
-
         .banner-heading{
             font-size: 35px;
             font-weight: bold;
@@ -63,7 +61,7 @@ a,a:hover{
             max-width: 509px;
             font-size: 16px;
             line-height: 24px;
-            font-weight: 400px;
+            font-weight: 400;
             margin-bottom: 50.5px;
         }
 
@@ -75,6 +73,7 @@ a,a:hover{
                 font-weight: bold;
                 font-size: 14px;
                 padding: 12px 24px;
+                border-radius: 0;
             }
             .req__btn{
                 background-color: #41A6FF;
@@ -87,20 +86,17 @@ a,a:hover{
             }
         }
     }
-    
-    // banner-right
+
     .banner-right{
         .banner-video{
+            .banner_video_img{
                 position: relative;
-                width: 100%;
-            i{
-                text-align: center;
+            }
+            .Media_play_button{
                 position: absolute;
-                font-size: 58px;
-                top: 40%;
+                top: 45%;
                 left: 45%;
-                opacity: .3;
-                color: #152C48;
+                width: 58px;
             }
         }
     }
@@ -137,17 +133,25 @@ a,a:hover{
         }
 
         .search__bar{
+          background-color: red ;
+          width: 273px;
+          position: relative;  
 
-            input{
+            .input__field{
                 font-size: 15px;
-                background-image: url(../img/search-solid.svg);
-                background-position: 10px 10px;
-                background-repeat: no-repeat;
                 border: 1px solid #E8E8E8;
-                // max-width: 273px;
                 padding: 10px 20px 10px 42px;
                 color: #BDBDBD;
+                width: 100%;
+                text-align: left;
+            
             }
+            .search_icon{
+                    position: absolute;
+                    left: 0;
+                    margin: 15px;
+                    width: 12px;
+                }
         }
     }
 
@@ -162,16 +166,18 @@ a,a:hover{
 
         .ticket{
             display: flex;
-            justify-content: space-between;
+            // justify-content: space-between;
             border: 1px solid #E0E0E0;
-            padding: 20.9px 50px 20.5px 25px;
-            // margin-right: 16px;
-            // max-width: 372px;
+            padding: 20.5px 20px;
+            gap: 15px;
 
             .brand__icon{
+                display: flex;
+                align-items: flex-start;
+                gap: 5px;
                 img{
-                    width: 80px;
-                    margin-right: 15px;
+                    width: 40px;
+                    object-fit: cover;
                 }
             }
             .ticket__description{
@@ -179,20 +185,25 @@ a,a:hover{
                 color: #212121;
                 line-height: 20px;
                 p{
-                    margin-bottom: 10.6px;
+                    margin-bottom: 4.6px;
+                }
+                a{
+                    font-size: 16px;
+                    i{
+                        font-size: 13px;
+                    }
                 }
             }
         }
     }
     .activeTabContent{
-    // visibility: visible;
     display: block;
     }
 }
 
 // Announcement
 .announcement{
-    background-color: #F5F9FC;
+    background: url('../img/gartner_banner_bg.png') center center/cover no-repeat;
 
     .announcement__content{
         max-width: 770px;
@@ -219,14 +230,6 @@ a,a:hover{
         display: flex;
         justify-content: space-between;
     
-        .performer_img{
-            display: flex;
-            justify-content: space-around;
-        
-            img{
-                max-width: 128px;
-            }
-        }
 
         .leadership_content{
 
@@ -254,9 +257,12 @@ a,a:hover{
     }
     .workflow_cards{
         // gap: 21px;
+        // display: flex;
+        // gap: 15px;
         .workflow_card{
             // padding: 30px 51px 30px 30px;
             padding: 30px;
+            // margin: 0 15px;
             background-color: #FFFFFF;
 
             .card_description{
@@ -281,5 +287,48 @@ a,a:hover{
     .section_title{
         margin-bottom: 30px;
     }
-    
+    .testimonial_container{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        
+        // align-items: stretch;
+
+        .testimonial_caseStudy{
+            border: 1px solid #E0E0E0;
+            width: 33.33%;
+            padding-bottom: 40px;
+            
+            .testimonial_content{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                // justify-content: space-between;
+                // justify-content: space-between;
+                padding: 40px 40px 0;
+
+                .case_heading{
+                    font-size: 24px;
+                    color: #212121;
+                    // margin-bottom: 20px;
+                    margin-bottom: 20px;
+                }
+                .case_about{
+                    font-size: 16px;
+                    color: #575A65;
+                    font-weight: 400;
+                    margin-bottom: 20px;
+                }
+                a{
+                    font-size: 16px;
+                    color: #49BCF8;
+                    // justify-self: flex-end;
+
+                    i{
+                        font-size: 13px;
+                    }
+                }
+            }
+    }
+    }
 }

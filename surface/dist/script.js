@@ -28,5 +28,18 @@ tabContainer.addEventListener('click', function (e) {
         document.querySelectorAll('.tab__content').forEach(tab => tab.classList.remove('activeTabContent'));
         document.querySelector(`.${tabClicked}`).classList.add('activeTabContent');
 
-    }
-})
+    };
+});
+
+const case_about = function () {
+    const allCase = document.querySelectorAll(".case_about");
+    let max = 0;
+    allCase.forEach(caseHeight => {
+        const paragraphHeight = caseHeight.getBoundingClientRect().height;
+        (paragraphHeight > max) && (max = paragraphHeight);
+    });
+    allCase.forEach(caseAbout => {
+        caseAbout.style.height = `${max}px`;
+    });
+};
+case_about();
