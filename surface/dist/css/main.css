@@ -73,7 +73,6 @@ a, a:hover {
   text-decoration: none;
 }
 .tabs .search__bar {
-  background-color: red;
   width: 273px;
   position: relative;
 }
@@ -153,6 +152,7 @@ a, a:hover {
   padding: 20.5px 20px;
   gap: 15px;
   margin-bottom: 30px;
+  box-shadow: 0px 3px 30px rgba(181, 181, 181, 0.2588235294);
 }
 .integrations .tab__content .ticket .brand__icon {
   display: flex;
@@ -378,7 +378,16 @@ a, a:hover {
   margin-bottom: 33px;
 }
 .app-list .tabs {
-  margin-bottom: 25px;
+  margin-bottom: 45px;
+}
+.app-list .tabs .search__bar {
+  width: 260px;
+}
+.app-list .tabs .search__bar .input__field {
+  padding: 10px 20px 10px 51px;
+}
+.app-list .tabs .search__bar .search_icon {
+  margin: 16px 15px 12px 24px;
 }
 .app-list .apps-detail .hover-section {
   display: none;
@@ -392,28 +401,64 @@ a, a:hover {
 }
 .app-list .apps-detail .app-row {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-column-gap: 2px;
+  grid-template-columns: repeat(8, 70px);
+  justify-content: space-between;
+  grid-row-gap: 25px;
 }
 .app-list .apps-detail .app-row .app-column {
-  padding: 0 40px;
-  margin-top: 25px;
   position: relative;
 }
+.app-list .apps-detail .app-row .app-column:hover .hover-section {
+  display: block;
+}
+.app-list .apps-detail .app-row .app-column .appname {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.app-list .apps-detail .app-row .app-column .appname .app-img-shadow {
+  padding: 10px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+}
 .app-list .apps-detail .app-row .app-column .appname img {
-  width: 70px;
-  margin-bottom: 15px;
+  width: 50px;
+  height: 50px;
   border-radius: 12px;
-  border: 1px solid #EEEEEE;
 }
 .app-list .apps-detail .app-row .app-column .appname a:last-child {
-  display: block;
   font-size: 12px;
   color: #45515E;
   font-weight: 400;
   text-align: center;
 }
-.app-list .apps-detail .app-row .app-column #hover-section {
+.app-list .apps-detail .app-row .app-column:nth-child(8n+1) .hover-section,
+.app-list .apps-detail .app-row .app-column:nth-child(8n+2) .hover-section,
+.app-list .apps-detail .app-row .app-column:nth-child(8n+3) .hover-section,
+.app-list .apps-detail .app-row .app-column:nth-child(8n+4) .hover-section {
+  left: 70px;
+}
+.app-list .apps-detail .app-row .app-column:nth-child(8n+1) .hover-section::after,
+.app-list .apps-detail .app-row .app-column:nth-child(8n+2) .hover-section::after,
+.app-list .apps-detail .app-row .app-column:nth-child(8n+3) .hover-section::after,
+.app-list .apps-detail .app-row .app-column:nth-child(8n+4) .hover-section::after {
+  left: -10px;
+  border-right: 12px solid #fff;
+}
+.app-list .apps-detail .app-row .app-column:nth-child(8n+5) .hover-section,
+.app-list .apps-detail .app-row .app-column:nth-child(8n+6) .hover-section,
+.app-list .apps-detail .app-row .app-column:nth-child(8n+7) .hover-section,
+.app-list .apps-detail .app-row .app-column:nth-child(8n+8) .hover-section {
+  right: 70px;
+}
+.app-list .apps-detail .app-row .app-column:nth-child(8n+5) .hover-section::after,
+.app-list .apps-detail .app-row .app-column:nth-child(8n+6) .hover-section::after,
+.app-list .apps-detail .app-row .app-column:nth-child(8n+7) .hover-section::after,
+.app-list .apps-detail .app-row .app-column:nth-child(8n+8) .hover-section::after {
+  right: -10px;
+  border-left: 12px solid #fff;
+}
+.app-list .apps-detail .hover-section {
   position: absolute;
   width: 400px;
   top: 0;
@@ -422,46 +467,134 @@ a, a:hover {
   box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.16);
   border-radius: 2px;
   text-align: left;
-  display: block;
-  left: 130px;
+  display: none;
 }
-.app-list .apps-detail .app-row .app-column #hover-section .app_popup-section {
+.app-list .apps-detail .hover-section .app_popup_section {
   display: flex;
   flex-direction: column;
 }
-.app-list .apps-detail .app-row .app-column #hover-section .app_popup-section .app_info {
+.app-list .apps-detail .hover-section .app_popup_section .app_info {
   border-bottom: 1px solid #e0e0e0;
   padding: 15px 10px;
   display: flex;
   justify-content: space-between;
 }
-.app-list .apps-detail .app-row .app-column #hover-section .app_popup-section .app_info .app_icon {
-  margin-left: 10px;
+.app-list .apps-detail .hover-section .app_popup_section .app_info .app_icon {
   border: 1px solid #e0e0e0;
+  width: 50px;
+  height: 50px;
   padding: 6px;
+  margin-left: 10px;
   border-radius: 5px;
 }
-.app-list .apps-detail .app-row .app-column #hover-section .app_popup-section .app_info .app_icon img {
-  max-width: 36px;
+.app-list .apps-detail .hover-section .app_popup_section .app_info .app_icon a img {
+  border-radius: 5px;
+  height: 36px;
 }
-.app-list .apps-detail .app-row .app-column #hover-section .app_popup-section .app_info .add_detail {
+.app-list .apps-detail .hover-section .app_popup_section .app_info .add_detail {
   width: calc(100% - 60px);
   padding-left: 15px;
 }
-.app-list .apps-detail .app-row .app-column #hover-section .app_popup-section .app_integration {
+.app-list .apps-detail .hover-section .app_popup_section .app_info .add_detail .app_title_name {
+  margin-bottom: 5px;
+}
+.app-list .apps-detail .hover-section .app_popup_section .app_info .add_detail .app_title_name a {
+  color: #212121;
+  font-weight: 600;
+  line-height: 20px;
+}
+.app-list .apps-detail .hover-section .app_popup_section .app_info .add_detail .app_body p {
+  color: #212121;
+  line-height: 16px;
+  margin-bottom: 5px;
+}
+.app-list .apps-detail .hover-section .app_popup_section .app_info .add_detail .app_cate ul li {
+  color: #41a6ff;
+  font-size: 12px;
+  line-height: 18px;
+  border-radius: 2px;
+  display: inline-block;
+  background-color: rgba(65, 166, 255, 0.09);
+  padding: 0 2px;
+}
+.app-list .apps-detail .hover-section .app_popup_section .app_integration {
   padding: 15px 10px;
-  float: left;
   width: 100%;
 }
-.app-list .apps-detail .app-row .app-column #hover-section .app_popup-section::after {
+.app-list .apps-detail .hover-section .app_popup_section .app_integration .integration-title {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 600;
+  color: #4bb881;
+  padding-left: 10px;
+  margin: 7px 0 15px;
+}
+.app-list .apps-detail .hover-section .app_popup_section .app_integration .app_pricing {
+  font-size: 15px;
+  line-height: 20px;
+  display: block;
+  padding: 10px;
+  width: 100%;
+  position: relative;
+  color: #6da6ed;
+}
+.app-list .apps-detail .hover-section .app_popup_section .app_integration .app_pricing h5 {
+  font-size: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-bottom: 0;
+  color: #212121;
+  height: 20px;
+  padding-right: 10px;
+  text-transform: inherit;
+}
+.app-list .apps-detail .hover-section .app_popup_section .app_integration .app_pricing h5:hover {
+  text-decoration: underline;
+}
+.app-list .apps-detail .hover-section .app_popup_section .app_integration .apps-view-more {
+  display: block;
+  border-radius: 5px;
+  background-color: #55c0a0;
+  font-size: 14px;
+  line-height: 16px;
+  width: 100%;
+  padding: 14px 0;
+  color: #fff;
+  text-align: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.app-list .apps-detail .hover-section .app_popup-section::after {
   left: -15px;
 }
-.app-list .apps-detail .app-row .app-column .hover-section::after {
+.app-list .apps-detail .hover-section::after {
   content: "";
   position: absolute;
   border-top: 12px solid transparent;
   border-bottom: 12px solid transparent;
   top: 30px;
-  left: -15px;
-  border-right: 15px solid #fff;
+}
+
+.navigation {
+  max-width: 1336px;
+  padding: 15px;
+  border-bottom: 1px solid #E0E0E0;
+  margin: 0 auto;
+}
+.navigation .nav_tab {
+  max-width: 463px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.navigation .nav_tab .tab {
+  font-size: 16px;
+  color: #212121;
+  font-size: 400;
+  padding-bottom: 10px;
+}
+.navigation .nav_tab tab:hover,
+.navigation .nav_tab .active {
+  border-bottom: 3px solid #41A6FF;
 }/*# sourceMappingURL=main.css.map */
