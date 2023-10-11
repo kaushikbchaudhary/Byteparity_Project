@@ -9,8 +9,17 @@ p {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Proxima Nova";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
 }
 
 @font-face {
@@ -152,6 +161,8 @@ a, a:hover {
   padding: 20.5px 20px;
   gap: 15px;
   margin-bottom: 30px;
+}
+.integrations .tab__content .ticket:hover {
   box-shadow: 0px 3px 30px rgba(181, 181, 181, 0.2588235294);
 }
 .integrations .tab__content .ticket .brand__icon {
@@ -175,6 +186,8 @@ a, a:hover {
 }
 .integrations .tab__content .ticket .ticket__description a {
   font-size: 16px;
+  color: #49BCF8;
+  font-weight: 600;
 }
 .integrations .tab__content .ticket .ticket__description a i {
   font-size: 13px;
@@ -196,9 +209,11 @@ a, a:hover {
   font-size: 20px;
   color: #188AE2;
   line-height: 32px;
+  font-weight: 600;
 }
 .announcement .announcement__content p .author {
   display: block;
+  font-weight: 300;
 }
 
 .leadership-recognition {
@@ -300,6 +315,7 @@ a, a:hover {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  width: 50%;
 }
 .our-customers .feedback-container .customer-feedback .quote_icon {
   color: #30D293;
@@ -577,7 +593,6 @@ a, a:hover {
 
 .navigation {
   max-width: 1336px;
-  padding: 15px;
   border-bottom: 1px solid #E0E0E0;
   margin: 0 auto;
 }
@@ -594,7 +609,57 @@ a, a:hover {
   font-size: 400;
   padding-bottom: 10px;
 }
-.navigation .nav_tab tab:hover,
+.navigation .nav_tab .tab:hover,
 .navigation .nav_tab .active {
+  color: #41A6FF;
   border-bottom: 3px solid #41A6FF;
+}
+
+.features {
+  padding-top: 52px;
+}
+.features .section_title {
+  margin-bottom: 40px;
+}
+.features > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.features .features_list .feature_name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #212121;
+  line-height: 26px;
+}
+.features .features_list .feature_description {
+  font-size: 16px;
+  font-weight: 400;
+  color: #575A65;
+  line-height: 24px;
+}
+
+.benefits {
+  padding-top: 60px;
+}
+.benefits .section_title {
+  margin-bottom: 40px;
+}
+.benefits .benefits_row > div {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.benefits .benefits_point {
+  display: flex;
+  gap: 40px;
+}
+.benefits .benefits_point img {
+  width: 154px;
+}
+.benefits .benefits_point .benefits_point-content .benefits_desc_head {
+  font-size: 16px;
+  font-weight: bold;
+  color: #212121;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=main.css.map */
