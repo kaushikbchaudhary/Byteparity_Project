@@ -9,7 +9,7 @@ p {
   padding: 0;
 }
 
-a {
+a, a:link {
   text-decoration: none;
 }
 
@@ -58,6 +58,14 @@ a, a:hover {
   font-size: 14px;
   padding: 12px 24px;
   border-radius: 0;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding-top: 20px;
+  background-color: #fff;
 }
 
 .tabs {
@@ -685,4 +693,99 @@ a, a:hover {
 }
 .faq .faq_content .content_container {
   margin-bottom: 30px;
+}
+
+.view-plans {
+  padding: 60px 0;
+}
+.view-plans .section_title {
+  margin-bottom: 40px;
+}
+.view-plans .offer_note {
+  font-size: 16px;
+  color: #575A65;
+  font-weight: 400;
+  text-align: left;
+}
+.view-plans .table {
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+.view-plans .table tbody th {
+  padding: 20px 36px;
+  background-color: #152C48;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 600;
+}
+.view-plans .table tbody th, .view-plans .table tbody td {
+  border: 1px solid #BDBDBD;
+  max-width: 380px;
+  padding: 20px 36px;
+}
+.view-plans .table tbody td p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  color: #575A65;
+}
+.view-plans .table tbody td p i {
+  font-size: 20px;
+}
+.view-plans .table tbody th:first-child {
+  background-color: #F5F5F5;
+  font-size: 16px;
+  color: #575A65;
+  font-weight: 400;
+}
+.view-plans .table tbody .text__highlight {
+  color: #212121;
+  font-weight: 400;
+}
+.view-plans .table tbody .price_btn {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+.view-plans .table tbody .schedule_btn {
+  background-color: #41A6FF;
+  border: 1px solid #42A5F8;
+  color: #FFFFFF;
+}
+.view-plans .table tbody .chat_pricing_btn {
+  background-color: rgba(65, 166, 255, 0);
+  color: #42A5F8;
+}
+.view-plans .table tbody .chat_pricing_btn, .view-plans .table tbody .schedule_btn {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.view-plans .table tbody .arrow_on_right {
+  text-align: right;
+  font-size: 4.77px;
+  color: #41A6FF;
+}
+.view-plans .table tbody .row_description {
+  display: flex;
+  align-items: center;
+}
+.view-plans .table tbody .row_description p {
+  color: #212121;
+  font-size: 16px;
+  font-weight: 600;
+}
+.view-plans .table tbody .light_font {
+  font-weight: 300;
+}
+.view-plans .table tbody .app__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.view-plans .table tbody .app__list a {
+  color: #188AE2;
 }/*# sourceMappingURL=main.css.map */

@@ -44,3 +44,28 @@ tabContainer.addEventListener('click', function (e) {
 // };
 // case_about();
 
+const sections = document.querySelectorAll('.nav_section');
+const tabs = document.querySelectorAll('.tab');
+const navigation = document.querySelector('.navigation');
+// sticky
+const stickyNav = function (enteries, observer) {
+    enteries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        if (entry.isIntersecting) {
+            tabs.forEach(tab => tab.classList.remove('active'));
+            navigation.classList.add("sticky");
+            const index = Array.from(sections).indexOf(entry.target);
+            tabs[index].classList.add('active');
+            console.log(entry.isIntersecting, entry.target);
+        }
+        
+    });
+};
+const currentSection = new IntersectionObserver(stickyNav, {
+    root: null,
+    threshold: 0.20,
+});
+
+sections.forEach(section => {
+    currentSection.observe(section);
+});

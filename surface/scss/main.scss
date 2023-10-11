@@ -8,9 +8,10 @@ p{
     margin: 0;
     padding: 0;
 }
-a{
+a,a:link{
     text-decoration: none;
 }
+
 body{
   font-family: "Proxima Nova";
 }
@@ -53,6 +54,14 @@ a,a:hover{
     font-size: 14px;
     padding: 12px 24px;
     border-radius: 0;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    padding-top: 20px;
+    background-color: #fff;
 }
 
 .tabs{
@@ -811,4 +820,120 @@ a,a:hover{
            margin-bottom: 30px;
         }
     }
+}
+
+// view-plans
+.view-plans{
+    padding: 60px 0;
+
+    .section_title{
+        margin-bottom: 40px;
+    }
+    .offer_note{
+        font-size: 16px;
+        color: #575A65;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .table{
+        // background-color: #188AE2;
+                border-collapse: collapse;
+                margin-bottom: 24px;
+
+
+        tbody{
+            th{
+                padding: 20px 36px;
+                background-color: #152C48;
+                color: #FFFFFF;
+                font-size: 24px;
+                font-weight: 600;
+            }
+            // th:first-child{
+
+            // }
+            th,td{
+                border: 1px solid #BDBDBD;
+                max-width: 380px;
+                padding: 20px 36px;
+            }
+            td p{
+                text-align: center;
+                font-weight: 400;
+                font-size: 16px;
+                color: #575A65;
+
+                i{
+                    font-size: 20px;
+                }
+            }
+            th:first-child{
+                background-color: #F5F5F5;
+                font-size: 16px;
+                color: #575A65;
+                font-weight: 400;
+            }
+
+            .text__highlight{
+                color: #212121;
+                font-weight: 400;
+            }
+
+            .price_btn{
+                display: flex;
+                gap: 15px;
+                justify-content: center;
+                // margin: 0 auto;
+
+            }
+            .schedule_btn{
+                background-color: #41A6FF;
+                border: 1px solid #42A5F8;
+                color: #FFFFFF;
+                
+            }
+            .chat_pricing_btn{
+                background-color: #41A6FF00;
+                color: #42A5F8;
+            }
+            .chat_pricing_btn,.schedule_btn{
+                display: flex;
+                gap: 8px;
+                align-items: center;
+            }
+            .arrow_on_right{
+                text-align: right;
+                font-size: 4.77px;
+                color: #41A6FF;
+            }
+            .row_description{
+                 display: flex;
+                align-items: center;
+                
+                p{
+                    color: #212121;
+                font-size: 16px;
+                font-weight: 600;
+                }
+            }
+            .light_font{
+                font-weight: 300;
+            }
+
+            .app__list{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+
+                a{
+                    color: #188AE2;
+                }
+            }
+        }
+    }
+
 }
