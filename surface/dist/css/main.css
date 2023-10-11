@@ -621,18 +621,19 @@ a, a:hover {
 .features .section_title {
   margin-bottom: 40px;
 }
-.features > div > div {
+.features .features_content {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
-.features .features_list .feature_name {
+
+.content_container .content_title {
   font-size: 16px;
   font-weight: bold;
   color: #212121;
-  line-height: 26px;
+  margin-bottom: 10px;
 }
-.features .features_list .feature_description {
+.content_container .content_description {
   font-size: 16px;
   font-weight: 400;
   color: #575A65;
@@ -662,4 +663,26 @@ a, a:hover {
   font-weight: bold;
   color: #212121;
   margin-bottom: 20px;
+}
+
+.architecture {
+  padding-top: 60px;
+}
+.architecture .section_title {
+  margin-bottom: 40px;
+}
+.architecture img {
+  display: block;
+  max-width: 934px;
+  margin: 0 auto;
+}
+
+.faq {
+  padding-top: 60px;
+}
+.faq .section_title {
+  margin-bottom: 40px;
+}
+.faq .faq_content .content_container {
+  margin-bottom: 30px;
 }/*# sourceMappingURL=main.css.map */

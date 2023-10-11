@@ -728,29 +728,30 @@ a,a:hover{
         margin-bottom: 40px;
     }
 
-    & > div > div{
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
+    
+    .features_content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     }
-
-    .features_list{
-        .feature_name{
-            font-size: 16px;
-            font-weight: bold;
-            color: #212121;
-            line-height: 26px;
-        }
-        .feature_description{
-            font-size: 16px;
-            font-weight: 400;
-            color: #575A65;
-            line-height: 24px;
-        }
-    }
-
 }
 
+
+    .content_container{
+
+            .content_title{
+                font-size: 16px;
+                font-weight: bold;
+                color: #212121;
+                margin-bottom: 10px;
+            }
+            .content_description{
+                font-size: 16px;
+                font-weight: 400;
+                color: #575A65;
+                line-height: 24px;
+            }
+        }
 // Benefits section
 .benefits{
     padding-top: 60px;
@@ -776,6 +777,38 @@ a,a:hover{
                 color: #212121;
                 margin-bottom: 20px;
             }
+        }
+    }
+}
+
+// Architecture section
+.architecture{
+    padding-top: 60px;
+
+    .section_title{margin-bottom: 40px;}
+    img{
+        display: block;
+        max-width: 934px;
+        margin: 0 auto;
+    }
+}
+
+.faq{
+    padding-top: 60px;
+
+    .section_title{
+        margin-bottom: 40px;
+    }
+    .faq_content{
+        // display: flex;
+        // // flex-direction: co;
+        // flex-wrap: wrap;
+        // // grid-template-columns: repeat(2,50%);
+        // gap: 30px 52px;
+
+
+        .content_container{
+           margin-bottom: 30px;
         }
     }
 }
