@@ -40,7 +40,7 @@ a, a:hover {
 }
 
 .container {
-  max-width: 1148px;
+  max-width: 1178px;
   width: 100%;
   margin: 0 auto;
 }
@@ -50,6 +50,18 @@ a, a:hover {
   text-align: center;
   font-size: 24px;
   color: #212121;
+  line-height: 32px;
+}
+
+.owl-wrapper-outer > div {
+  width: inherit;
+}
+@media (min-width: 768px) {
+  .owl-wrapper-outer > div {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
 }
 
 .btn {
@@ -146,9 +158,10 @@ a, a:hover {
 }
 .banner-content .banner-right .banner-video .Media_play_button {
   position: absolute;
-  top: 45%;
-  left: 45%;
   width: 58px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .integrations {
@@ -235,6 +248,7 @@ a, a:hover {
   font-size: 24px;
   color: #212121;
   margin-bottom: 17px;
+  font-weight: 600;
 }
 .leadership-recognition .leaddership_performer .leadership_content p {
   font-size: 16px;
@@ -248,6 +262,7 @@ a, a:hover {
 }
 .cloud_workFlow .section_title {
   margin-bottom: 31px;
+  line-height: 32px;
 }
 .cloud_workFlow .workflow_cards .workflow_card {
   padding: 30px;
@@ -271,15 +286,14 @@ a, a:hover {
 .case_study .section_title {
   margin-bottom: 30px;
 }
-.case_study .testimonial_container {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
+.case_study #owl-demo {
+  width: 65%;
+  margin: auto;
 }
 .case_study .testimonial_container .testimonial_caseStudy {
   border: 1px solid #E0E0E0;
-  width: 33.33%;
   padding-bottom: 40px;
+  margin-left: 40px;
 }
 .case_study .testimonial_container .testimonial_caseStudy .testimonial_content {
   height: 100%;
@@ -712,16 +726,21 @@ a, a:hover {
   margin-bottom: 24px;
 }
 .view-plans .table tbody th {
-  padding: 20px 36px;
   background-color: #152C48;
   color: #FFFFFF;
   font-size: 24px;
+  padding: 36px;
+  line-height: 29px;
   font-weight: 600;
+  text-align: center;
 }
 .view-plans .table tbody th, .view-plans .table tbody td {
   border: 1px solid #BDBDBD;
-  max-width: 380px;
-  padding: 20px 36px;
+  width: 33.33%;
+  min-width: 354px;
+}
+.view-plans .table tbody td {
+  padding: 20px;
 }
 .view-plans .table tbody td p {
   text-align: center;
@@ -738,6 +757,11 @@ a, a:hover {
   color: #575A65;
   font-weight: 400;
 }
+.view-plans .table tbody th:first-child,
+.view-plans .table tbody td:first-child {
+  text-align: left;
+  padding-left: 36px;
+}
 .view-plans .table tbody .text__highlight {
   color: #212121;
   font-weight: 400;
@@ -747,10 +771,17 @@ a, a:hover {
   gap: 15px;
   justify-content: center;
 }
+.view-plans .table tbody .btn {
+  border-radius: 2px;
+}
 .view-plans .table tbody .schedule_btn {
   background-color: #41A6FF;
   border: 1px solid #42A5F8;
   color: #FFFFFF;
+}
+.view-plans .table tbody .schedule_btn i {
+  color: #FFFFFF;
+  font-size: 12.6px;
 }
 .view-plans .table tbody .chat_pricing_btn {
   background-color: rgba(65, 166, 255, 0);
@@ -788,4 +819,72 @@ a, a:hover {
 }
 .view-plans .table tbody .app__list a {
   color: #188AE2;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 20px;
+  }
+  .tabs {
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 20px;
+  }
+  .tabs ul {
+    flex-wrap: wrap;
+  }
+  .tabs .search__bar {
+    width: 100%;
+  }
+  .banner-content {
+    padding: 40.75px 0 17px;
+  }
+  .banner-content .banner-left {
+    margin-bottom: 26px;
+  }
+  .banner-content .banner-left .banner-heading {
+    font-size: 24px;
+    margin-bottom: 15.25px;
+  }
+  .banner-content .banner-left .banner-description {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .banner-content .banner-left .btns .btn {
+    font-size: 14px;
+  }
+  .integrations {
+    padding: 30px 0;
+  }
+  .integrations .section_title {
+    line-height: 32px;
+    margin-bottom: 25px;
+  }
+  .integrations .tab__content .ticket {
+    margin-bottom: 10px;
+  }
+  .leadership-recognition {
+    padding: 40px 0;
+  }
+  .leadership-recognition .leaddership_performer {
+    flex-direction: column;
+    gap: 22.28px;
+  }
+  .leadership-recognition .leaddership_performer .leadership_content .leadership_content_description {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .cloud_workFlow {
+    padding: 30px 0;
+  }
+  .cloud_workFlow .section_title {
+    margin-bottom: 30px;
+  }
+  .case_study {
+    padding: 40px 0 30px;
+  }
+  .case_study .section_title {
+    margin-bottom: 32px;
+  }
 }/*# sourceMappingURL=main.css.map */

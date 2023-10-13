@@ -37,7 +37,7 @@ a,a:hover{
     text-decoration: none;
 }
 .container{
-    max-width: 1148px;
+    max-width: 1178px;
     width: 100%;
     margin: 0 auto;
 }
@@ -46,6 +46,17 @@ a,a:hover{
     text-align: center;
     font-size: 24px;
     color: #212121;
+    line-height: 32px;
+}
+// .owl-wrapper
+.owl-wrapper-outer > div{
+    width: inherit;
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+     }
 }
 // button style
 .btn{
@@ -153,9 +164,11 @@ a,a:hover{
             }
             .Media_play_button{
                 position: absolute;
-                top: 45%;
-                left: 45%;
                 width: 58px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+
             }
         }
     }
@@ -254,6 +267,7 @@ a,a:hover{
                 font-size: 24px;
                 color: #212121;
                 margin-bottom: 17px;
+                font-weight: 600;
             }
             p{
                 font-size: 16px;
@@ -271,6 +285,7 @@ a,a:hover{
 
     .section_title{
         margin-bottom: 31px;
+        line-height: 32px;
     }
     .workflow_cards{
         // gap: 21px;
@@ -304,17 +319,39 @@ a,a:hover{
     .section_title{
         margin-bottom: 30px;
     }
+    #owl-demo{
+        width: 65%;
+        margin: auto;
+    }
     .testimonial_container{
-        display: flex;
-        justify-content: center;
-        gap: 40px;
+
+        // {
+        //     display: flex;
+        //     justify-content: center;
+        //     gap: 40px;
+        // }
+
+        // .owl-wrapper{
+        //     width: inherit !important;
+        //     display: flex !important;
+        //     justify-content: center;
+        //     gap: 40px;
+
+        //     .owl-item{
+        //         width: 33.33% !important;
+        //     }
+        // }
+        // display: flex;
+        // justify-content: center;
+        // gap: 40px;
         
         // align-items: stretch;
 
         .testimonial_caseStudy{
             border: 1px solid #E0E0E0;
-            width: 33.33%;
+            // width: 33.33%;
             padding-bottom: 40px;
+            margin-left: 40px;
             
             .testimonial_content{
                 height: 100%;
@@ -841,31 +878,40 @@ a,a:hover{
                 border-collapse: collapse;
                 margin-bottom: 24px;
 
-
         tbody{
+            
             th{
-                padding: 20px 36px;
                 background-color: #152C48;
                 color: #FFFFFF;
                 font-size: 24px;
+                padding: 36px;
+                line-height: 29px;
                 font-weight: 600;
+                text-align: center;
+
             }
             // th:first-child{
 
             // }
             th,td{
                 border: 1px solid #BDBDBD;
-                max-width: 380px;
-                padding: 20px 36px;
+                width: 33.33%;
+                min-width: 354px;
+
+                
             }
-            td p{
+            td {
+                padding: 20px;
+
+                p{
                 text-align: center;
                 font-weight: 400;
                 font-size: 16px;
                 color: #575A65;
 
-                i{
-                    font-size: 20px;
+                    i{
+                        font-size: 20px;
+                    }
                 }
             }
             th:first-child{
@@ -874,7 +920,11 @@ a,a:hover{
                 color: #575A65;
                 font-weight: 400;
             }
-
+            th:first-child,
+            td:first-child{
+                text-align: left;
+                padding-left: 36px;
+            }
             .text__highlight{
                 color: #212121;
                 font-weight: 400;
@@ -884,13 +934,21 @@ a,a:hover{
                 display: flex;
                 gap: 15px;
                 justify-content: center;
-                // margin: 0 auto;
 
+            }
+            .btn{
+                border-radius: 2px;
             }
             .schedule_btn{
                 background-color: #41A6FF;
                 border: 1px solid #42A5F8;
                 color: #FFFFFF;
+
+                i{
+                color: #FFFFFF;
+                    font-size: 12.6px;
+
+                }
                 
             }
             .chat_pricing_btn{
@@ -913,8 +971,8 @@ a,a:hover{
                 
                 p{
                     color: #212121;
-                font-size: 16px;
-                font-weight: 600;
+                    font-size: 16px;
+                    font-weight: 600;
                 }
             }
             .light_font{
@@ -937,3 +995,20 @@ a,a:hover{
     }
 
 }
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) { 
+    @import 'mobail';
+}
+
+// Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) {}
+
+// Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {}
+
+// X-Large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {}
+
+// XX-Large devices (larger desktops, 1400px and up)
+// @media (min-width: 1400px) {}

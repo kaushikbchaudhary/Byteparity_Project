@@ -1,0 +1,108 @@
+.container{
+    padding: 0 20px;
+}
+
+// tab & search bar Mobail view
+.tabs{
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 20px;
+
+    ul{
+        flex-wrap: wrap;
+    }
+
+    .search__bar{
+        width: 100%;
+    }
+}
+//  Banner sectino mobail view
+.banner-content{
+    padding: 40.75px 0 17px;
+
+    .banner-left{
+        margin-bottom: 26px;
+        .banner-heading{
+            font-size: 24px;
+            margin-bottom: 15.25px;
+            // line-height: 32px;
+        }
+        .banner-description{
+            font-size: 14px;
+            line-height: 22px;
+            margin-bottom: 20px;
+        }
+        .btns{
+            .btn{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+// Integration Mobail view
+.integrations{
+    padding: 30px 0;
+
+    .section_title{
+        line-height: 32px;
+        margin-bottom: 25px;
+    }
+
+    .tab__content{
+        .ticket{
+            margin-bottom: 10px;
+        }
+    }
+}
+
+// Announcement Nothing to do wiht Mobail view
+
+.leadership-recognition{
+    padding: 40px 0;
+
+    .leaddership_performer{
+        // display: block;
+        flex-direction: column;
+        gap: 22.28px;
+
+        .leadership_content{
+            .leadership_content_description{
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+        }
+
+    }
+}
+
+// cloud_workFlow
+.cloud_workFlow{
+    padding: 30px 0;
+
+    .section_title{
+        margin-bottom: 30px;
+    }
+}
+
+.case_study{
+    padding: 40px 0 30px;
+
+    .section_title{
+        margin-bottom: 32px;
+    }
+
+    .testimonial_container{
+
+        // .owl-wrapper{
+        //     // flex-direction: ;
+        //     flex: none !important;
+        // }
+    }
+
+    // .testimonial_caseStudy{
+
+    // }
+}
+// .view-plans .table tbody th, .view-plans .table tbody td {
+// }
