@@ -48,7 +48,7 @@ a,a:hover{
     text-align: center;
     font-size: 24px;
     color: #212121;
-    line-height: 32px;
+    line-height: 29px;
 }
 // .owl-wrapper
 // .owl-wrapper-outer > div{
@@ -59,7 +59,7 @@ a,a:hover{
     border: 1px solid #42A5F8;
     font-weight: bold;
     font-size: 14px;
-    padding: 12px 24px;
+    padding: 11px 25px;
     border-radius: 2px;
     line-height: 16px;
 }
@@ -68,7 +68,6 @@ a,a:hover{
     position: sticky;
     top: 0;
     z-index: 10;
-    padding-top: 20px;
     background-color: #fff;
 }
 
@@ -84,7 +83,7 @@ a,a:hover{
 
             a{
                 color: #575A65;
-                font-weight: lighter;
+                font-weight: 300;
                 line-height: 15px;
                 white-space: nowrap;
             }
@@ -103,10 +102,11 @@ a,a:hover{
             .input__field{
                 font-size: 15px;
                 border: 1px solid #E8E8E8;
-                padding: 10px 20px 10px 42px;
+                padding: 9px 20px 9px 42px;
                 color: #BDBDBD;
                 width: 100%;
                 text-align: left;
+                line-height: 18px;
             
             }
             .search_icon{
@@ -250,6 +250,7 @@ a,a:hover{
             .author{
                 display: block;
                 font-weight: 300;
+                line-height: 24px;
             }
         }
     }
@@ -270,11 +271,13 @@ a,a:hover{
                 color: #212121;
                 margin-bottom: 17px;
                 font-weight: 600;
+                line-height: 29px;
             }
             p{
                 font-size: 16px;
                 color: #575A65;
-                line-height: 24px;
+                line-height: 22.7px;
+                font-weight: 400;
             }
         }
     }
@@ -287,12 +290,9 @@ a,a:hover{
 
     .section_title{
         margin-bottom: 31px;
-        line-height: 32px;
+        line-height: 29px;
     }
     .workflow_cards{
-        // gap: 21px;
-        // display: flex;
-        // gap: 15px;
         .workflow_card{
             // padding: 30px 51px 30px 30px;
             padding: 30px;
@@ -304,12 +304,14 @@ a,a:hover{
                 font-size: 16px;
                 font-weight: bold;
                 margin-bottom: 19px;
+                line-height: 20px;
             }
 
             .card_content{
                 color: #575A65;
                 font-size: 16px;
                 font-weight: 400;
+                line-height: 24px;
             }
         }
     }
@@ -322,19 +324,25 @@ a,a:hover{
         margin-bottom: 30px;
     }
     #case-study-owl{
-        width: 784px;
-        margin: auto;
+        // width: 784px;
+        // display: inline-block !important;
+        // margin: auto !important;
         .owl-wrapper{
             display: flex !important;
-            justify-content: start;
+            justify-content: center;
             gap: 40px;
+            width: inherit !important;
         }
         .owl-item{
             border: 1px solid #E0E0E0;
             width: 372px !important;
+
+            margin-bottom: 25px;
+            // width: 33% !importan;
         }
-        // .owl-item:first-child{
-        // }
+            // .owl-item:first-child{
+            //     margin-right: 18px;
+            // }
     }
     .testimonial_container{
 
@@ -346,19 +354,18 @@ a,a:hover{
 
         .testimonial_caseStudy{
             // width: 33.33%;
-            padding-bottom: 40px;
-            
+            padding-bottom: 40px;       
             .testimonial_content{
                 height: 100%;
                 display: flex;
                 flex-direction: column;
-                // justify-content: space-between;
                 // justify-content: space-between;
                 padding: 40px 40px 0;
 
                 .case_heading{
                     font-size: 24px;
                     color: #212121;
+                    line-height: 29px;
                     // margin-bottom: 20px;
                     margin-bottom: 20px;
                 }
@@ -366,10 +373,12 @@ a,a:hover{
                     font-size: 16px;
                     color: #575A65;
                     font-weight: 400;
+                    line-height: 24px;
                     margin-bottom: 20px;
                 }
                 a{
                     font-size: 16px;
+                    line-height: 20px;
                     color: #49BCF8;
                     // justify-self: flex-end;
 
@@ -391,21 +400,24 @@ a,a:hover{
     }
 
     #our-customers-owl{
-        .owl-wrapper{
-            display: flex !important;
-            justify-content: start;
-            gap: 18px;
-        }
+    //     .owl-wrapper{
+    //         display: flex !important;
+    //         justify-content: start;
+    //         gap: 18px;
+    //     }
         .owl-item{
             background-color: #FFFFFF;
-            width: 565px !important;
-            border-radius: 8px;
+            // width: 565px !important;
+            // border-radius: 8px;
+        }
+        .owl-item:first-child{
+            margin-right: 18px;
         }
     }
 
     .feedback-container{
         display: flex;
-        gap: 18px   ;
+        gap: 18px;
 
         .customer-feedback{
             padding: 30px;
@@ -431,6 +443,11 @@ a,a:hover{
 
                 .customer-image{
                     width: 50px;
+                    // min-width: 50px;
+                    // height: auto;
+                    flex-grow: 0;
+                    flex-shrink: 0;
+                    // flex-basis: 50px;
                 }
 
                 .customer-name{
@@ -468,7 +485,7 @@ a,a:hover{
                     p{
                         color: #575A65;
                         font-size: 16px;
-                        line-height: 24px;
+                        line-height: 22px;
                         margin-bottom: 25px;
                     }
                 }
@@ -476,6 +493,8 @@ a,a:hover{
             .webinar__btn{
                 line-height: 16px;
                 background-color: #41A6FF;
+                padding-left: 26.5px;
+                padding-right: 26.5px;
                 color: #FFFFFF;
             }
            
@@ -495,8 +514,9 @@ a,a:hover{
                 }
                 .play_btn{
                     position: absolute;
-                    top: 32%;
-                    left: 39%;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
                     border-radius: 50%;
                     padding: 24px;
                     background-color: #FFFFFF55;
@@ -770,6 +790,8 @@ a,a:hover{
             color: #212121;
             font-size: 400;
             padding-bottom: 10px;
+            white-space: nowrap;
+            line-height: 20px;
         }
         .tab:hover,
         .active{
@@ -783,21 +805,20 @@ a,a:hover{
 .features{
     padding-top: 52px;
 
+    .col-xs-12,.col-sm-9{
+            padding-left: 0px;
+            padding-right: 0px;
+    }
     .section_title{
         margin-bottom: 40px;
     }
-
-    
     .features_content{
     display: flex;
     flex-direction: column;
     gap: 30px;
     }
 }
-
-
     .content_container{
-
             .content_title{
                 font-size: 16px;
                 font-weight: bold;
@@ -818,10 +839,15 @@ a,a:hover{
     .section_title{
         margin-bottom: 40px;
     }
-    .benefits_row > div{
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
+    // .benefits_row > div{
+    //     display: flex;
+    //     flex-direction: column;
+    //     gap: 40px;
+    // }
+    .benefits_row{
+        display: grid;
+        grid-template-columns: repeat(2,49%);
+        grid-gap: 40px 16px;
     }
     .benefits_point{
         display: flex;
@@ -832,9 +858,15 @@ a,a:hover{
         .benefits_point-content{
             .benefits_desc_head{
                 font-size: 16px;
+                line-height: 20px;
                 font-weight: bold;
                 color: #212121;
                 margin-bottom: 20px;
+            }
+            .desc_content{
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 23px;
             }
         }
     }
@@ -859,15 +891,15 @@ a,a:hover{
         margin-bottom: 40px;
     }
     .faq_content{
-        // display: flex;
-        // // flex-direction: co;
-        // flex-wrap: wrap;
-        // // grid-template-columns: repeat(2,50%);
-        // gap: 30px 52px;
-
-
         .content_container{
            margin-bottom: 30px;
+
+           .content_title{
+                line-height: 23px;
+            }
+            .content_description{
+                margin-right: 52px;
+            }
         }
     }
 }
@@ -884,6 +916,7 @@ a,a:hover{
         color: #575A65;
         font-weight: 400;
         text-align: left;
+        line-height: 20px;
     }
 
     .table{
@@ -1008,19 +1041,65 @@ a,a:hover{
 
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (max-width: 576px) { 
+
+
+
+
+
+
+// `xl` applies to large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    @import 'xl';
+}
+// `lg` applies to medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+    .banner-content{
+        .banner-left{
+            margin-bottom: 26px;
+        }
+    }
+    .app-list{
+        .apps-detail{
+            .app-row{
+                grid-template-columns: repeat(6,66px);
+                justify-content: space-around;
+
+            }
+        }
+    }
+
+    .key-takeaways{
+        .key-points-container {
+            .key-points-content{
+                .webinar__btn{
+                    display: block;
+                    margin:0 auto 30px auto;                   
+                }
+            }
+        }
+    }
+    .benefits{
+        .benefits_row{
+            padding: 0 10px;
+        }
+        .benefits_point{
+            flex-direction: column;
+            gap: 25px;
+            align-items: center;
+            text-align: center;
+        }
+    }
+}
+
+// `md` applies to small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+    @import 'md';
+}
+// `sm` applies to x-small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
     @import 'mobail';
 }
 
-// Medium devices (tablets, 768px and up)
-// @media (min-width: 768px) {}
 
-// Large devices (desktops, 992px and up)
-// @media (min-width: 992px) {}
-
-// X-Large devices (large desktops, 1200px and up)
-// @media (min-width: 1200px) {}
-
-// XX-Large devices (larger desktops, 1400px and up)
-// @media (min-width: 1400px) {}
+// `xxl` applies to x-large devices (large desktops, less than 1400px)
+// @media (max-width: 1399.98px) { }

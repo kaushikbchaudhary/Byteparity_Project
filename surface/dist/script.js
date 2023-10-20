@@ -8,7 +8,7 @@ const tabContentSiblings = document.querySelector(".tab__content").parentElement
 // console.log(integrationSection.children);
 // console.log(integrationSection.childNodes);
 
-const siblingAnchors = document.querySelectorAll('.tabs ul li a');
+const siblingAnchors = integrationSection.querySelectorAll('.tabs ul li a');
 console.log(siblingAnchors);
 tabContainer.addEventListener('click', function (e) {
     if (e.target.tagName === 'A') {
@@ -56,9 +56,9 @@ const stickyNav = function (enteries, observer) {
             navigation.classList.add("sticky");
             const index = Array.from(sections).indexOf(entry.target);
             tabs[index].classList.add('active');
+            tabs[index].classList.contains('active') && tabs[index].scrollIntoView({ behavior: 'smooth', inline: 'center' });         
             console.log(entry.isIntersecting, entry.target);
         }
-        
     });
 };
 const currentSection = new IntersectionObserver(stickyNav, {
@@ -69,7 +69,6 @@ const currentSection = new IntersectionObserver(stickyNav, {
 sections.forEach(section => {
     currentSection.observe(section);
 });
-
 
 $(document).ready(function () {
     $("#case-study-owl").owlCarousel({

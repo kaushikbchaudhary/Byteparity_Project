@@ -52,14 +52,14 @@ a, a:hover {
   text-align: center;
   font-size: 24px;
   color: #212121;
-  line-height: 32px;
+  line-height: 29px;
 }
 
 .btn {
   border: 1px solid #42A5F8;
   font-weight: bold;
   font-size: 14px;
-  padding: 12px 24px;
+  padding: 11px 25px;
   border-radius: 2px;
   line-height: 16px;
 }
@@ -68,7 +68,6 @@ a, a:hover {
   position: sticky;
   top: 0;
   z-index: 10;
-  padding-top: 20px;
   background-color: #fff;
 }
 
@@ -85,7 +84,7 @@ a, a:hover {
 }
 .tabs ul a {
   color: #575A65;
-  font-weight: lighter;
+  font-weight: 300;
   line-height: 15px;
   white-space: nowrap;
 }
@@ -102,10 +101,11 @@ a, a:hover {
 .tabs .search__bar .input__field {
   font-size: 15px;
   border: 1px solid #E8E8E8;
-  padding: 10px 20px 10px 42px;
+  padding: 9px 20px 9px 42px;
   color: #BDBDBD;
   width: 100%;
   text-align: left;
+  line-height: 18px;
 }
 .tabs .search__bar .search_icon {
   position: absolute;
@@ -231,6 +231,7 @@ a, a:hover {
 .announcement .announcement__content p .author {
   display: block;
   font-weight: 300;
+  line-height: 24px;
 }
 
 .leadership-recognition {
@@ -245,11 +246,13 @@ a, a:hover {
   color: #212121;
   margin-bottom: 17px;
   font-weight: 600;
+  line-height: 29px;
 }
 .leadership-recognition .leaddership_performer .leadership_content p {
   font-size: 16px;
   color: #575A65;
-  line-height: 24px;
+  line-height: 22.7px;
+  font-weight: 400;
 }
 
 .cloud_workFlow {
@@ -258,7 +261,7 @@ a, a:hover {
 }
 .cloud_workFlow .section_title {
   margin-bottom: 31px;
-  line-height: 32px;
+  line-height: 29px;
 }
 .cloud_workFlow .workflow_cards .workflow_card {
   padding: 30px;
@@ -269,11 +272,13 @@ a, a:hover {
   font-size: 16px;
   font-weight: bold;
   margin-bottom: 19px;
+  line-height: 20px;
 }
 .cloud_workFlow .workflow_cards .workflow_card .card_content {
   color: #575A65;
   font-size: 16px;
   font-weight: 400;
+  line-height: 24px;
 }
 
 .case_study {
@@ -282,18 +287,16 @@ a, a:hover {
 .case_study .section_title {
   margin-bottom: 30px;
 }
-.case_study #case-study-owl {
-  width: 784px;
-  margin: auto;
-}
 .case_study #case-study-owl .owl-wrapper {
   display: flex !important;
-  justify-content: start;
+  justify-content: center;
   gap: 40px;
+  width: inherit !important;
 }
 .case_study #case-study-owl .owl-item {
   border: 1px solid #E0E0E0;
   width: 372px !important;
+  margin-bottom: 25px;
 }
 .case_study .testimonial_container .testimonial_caseStudy {
   padding-bottom: 40px;
@@ -307,16 +310,19 @@ a, a:hover {
 .case_study .testimonial_container .testimonial_caseStudy .testimonial_content .case_heading {
   font-size: 24px;
   color: #212121;
+  line-height: 29px;
   margin-bottom: 20px;
 }
 .case_study .testimonial_container .testimonial_caseStudy .testimonial_content .case_about {
   font-size: 16px;
   color: #575A65;
   font-weight: 400;
+  line-height: 24px;
   margin-bottom: 20px;
 }
 .case_study .testimonial_container .testimonial_caseStudy .testimonial_content a {
   font-size: 16px;
+  line-height: 20px;
   color: #49BCF8;
 }
 .case_study .testimonial_container .testimonial_caseStudy .testimonial_content a i {
@@ -330,15 +336,11 @@ a, a:hover {
 .our-customers .section_title {
   margin-bottom: 63px;
 }
-.our-customers #our-customers-owl .owl-wrapper {
-  display: flex !important;
-  justify-content: start;
-  gap: 18px;
-}
 .our-customers #our-customers-owl .owl-item {
   background-color: #FFFFFF;
-  width: 565px !important;
-  border-radius: 8px;
+}
+.our-customers #our-customers-owl .owl-item:first-child {
+  margin-right: 18px;
 }
 .our-customers .feedback-container {
   display: flex;
@@ -365,6 +367,8 @@ a, a:hover {
 }
 .our-customers .feedback-container .customer-feedback .customer_intro .customer-image {
   width: 50px;
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 .our-customers .feedback-container .customer-feedback .customer_intro .customer-name {
   font-size: 16px;
@@ -392,12 +396,14 @@ a, a:hover {
 .key-takeaways .key-points-container .key-points-content .key-points-list .point-list p {
   color: #575A65;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 22px;
   margin-bottom: 25px;
 }
 .key-takeaways .key-points-container .key-points-content .webinar__btn {
   line-height: 16px;
   background-color: #41A6FF;
+  padding-left: 26.5px;
+  padding-right: 26.5px;
   color: #FFFFFF;
 }
 .key-takeaways .key-points-container .key-points-video .webinar_video {
@@ -413,8 +419,9 @@ a, a:hover {
 }
 .key-takeaways .key-points-container .key-points-video .webinar_video .play_btn {
   position: absolute;
-  top: 32%;
-  left: 39%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   padding: 24px;
   background-color: rgba(255, 255, 255, 0.3333333333);
@@ -645,6 +652,8 @@ a, a:hover {
   color: #212121;
   font-size: 400;
   padding-bottom: 10px;
+  white-space: nowrap;
+  line-height: 20px;
 }
 .navigation .nav_tab .tab:hover,
 .navigation .nav_tab .active {
@@ -654,6 +663,10 @@ a, a:hover {
 
 .features {
   padding-top: 52px;
+}
+.features .col-xs-12, .features .col-sm-9 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .features .section_title {
   margin-bottom: 40px;
@@ -683,10 +696,10 @@ a, a:hover {
 .benefits .section_title {
   margin-bottom: 40px;
 }
-.benefits .benefits_row > div {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+.benefits .benefits_row {
+  display: grid;
+  grid-template-columns: repeat(2, 49%);
+  grid-gap: 40px 16px;
 }
 .benefits .benefits_point {
   display: flex;
@@ -697,9 +710,15 @@ a, a:hover {
 }
 .benefits .benefits_point .benefits_point-content .benefits_desc_head {
   font-size: 16px;
+  line-height: 20px;
   font-weight: bold;
   color: #212121;
   margin-bottom: 20px;
+}
+.benefits .benefits_point .benefits_point-content .desc_content {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
 }
 
 .architecture {
@@ -723,6 +742,12 @@ a, a:hover {
 .faq .faq_content .content_container {
   margin-bottom: 30px;
 }
+.faq .faq_content .content_container .content_title {
+  line-height: 23px;
+}
+.faq .faq_content .content_container .content_description {
+  margin-right: 52px;
+}
 
 .view-plans {
   padding: 60px 0;
@@ -735,6 +760,7 @@ a, a:hover {
   color: #575A65;
   font-weight: 400;
   text-align: left;
+  line-height: 20px;
 }
 .view-plans .table {
   border-collapse: separate;
@@ -850,7 +876,154 @@ a, a:hover {
   color: #188AE2;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1199.98px) {
+  .tabs {
+    margin-bottom: 30px;
+  }
+  .banner-content {
+    padding: 60.75px 0;
+  }
+  .banner-content .banner-left .banner-heading {
+    font-size: 29px;
+    margin-bottom: 21px;
+    line-height: 40px;
+  }
+  .banner-content .banner-left .banner-description {
+    font-size: 15px;
+    line-height: 23px;
+    margin-bottom: 35px;
+  }
+  .banner-content .banner-right .banner-video .Media_play_button {
+    width: 46px;
+  }
+  .integrations {
+    padding: 46px 0;
+  }
+  .integrations .section_title {
+    margin-bottom: 38px;
+  }
+  .integrations .tab__content .ticket {
+    margin-bottom: 20px;
+    padding-right: 16px;
+  }
+  .leadership-recognition {
+    padding: 53px 0;
+  }
+  .leadership-recognition .leaddership_performer .leadership_content .leadership_content_description {
+    font-size: 20px;
+    margin-bottom: 18px;
+    line-height: 24px;
+  }
+  .cloud_workFlow {
+    padding: 45px 0;
+  }
+  .cloud_workFlow .section_title {
+    margin-bottom: 30px;
+  }
+  .case_study {
+    padding: 50px 0;
+  }
+  .case_study .section_title {
+    margin-bottom: 31px;
+  }
+  .our-customers {
+    padding: 48px 0 73px;
+  }
+  .our-customers .section_title {
+    margin-bottom: 46px;
+  }
+  .key-takeaways {
+    padding: 53px 0;
+  }
+  .key-takeaways .section_title {
+    margin-bottom: 46px;
+  }
+  .key-takeaways .key-points-container .key-points-content .key-points-list {
+    margin-bottom: 10px;
+  }
+  .key-takeaways .key-points-container .key-points-video .webinar_video {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+  .key-takeaways .key-points-container .key-points-video .webinar_video .play_btn i {
+    font-size: 49px;
+  }
+  .app-list {
+    padding-bottom: 49px;
+  }
+  .app-list .section_title {
+    margin-bottom: 31px;
+  }
+  .app-list .tabs {
+    margin-bottom: 37px;
+  }
+  .app-list .tabs .search__bar .input__field {
+    padding-left: 46px;
+  }
+  .app-list .tabs .search__bar .search_icon {
+    margin-left: 20px;
+  }
+  .features {
+    padding-top: 41px;
+  }
+  .features .section_title {
+    margin-bottom: 35px;
+  }
+  .benefits {
+    padding-top: 45px;
+  }
+  .benefits .section_title {
+    margin-bottom: 35px;
+  }
+  .benefits .benefits_point {
+    gap: 30px;
+  }
+  .architecture {
+    padding-top: 45px;
+  }
+  .architecture .section_title {
+    margin-bottom: 35px;
+  }
+  .faq {
+    padding-top: 55px;
+  }
+  .faq .section_title {
+    margin-bottom: 35px;
+  }
+  .faq .faq_content {
+    gap: 30px 41px;
+  }
+  .view-plans {
+    padding: 50px 0;
+  }
+  .view-plans .section_title {
+    margin-bottom: 45px;
+  }
+}
+@media (max-width: 991.98px) {
+  .banner-content .banner-left {
+    margin-bottom: 26px;
+  }
+  .app-list .apps-detail .app-row {
+    grid-template-columns: repeat(6, 66px);
+    justify-content: space-around;
+  }
+  .key-takeaways .key-points-container .key-points-content .webinar__btn {
+    display: block;
+    margin: 0 auto 30px auto;
+  }
+  .benefits .benefits_row {
+    padding: 0 10px;
+  }
+  .benefits .benefits_point {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 767.98px) {
   .container {
     padding: 0 20px;
   }
@@ -881,11 +1054,11 @@ a, a:hover {
   .banner-content .banner-left .banner-heading {
     font-size: 24px;
     margin-bottom: 15.25px;
-    line-height: 32px;
+    line-height: 31px;
   }
   .banner-content .banner-left .banner-description {
     font-size: 14px;
-    line-height: 22px;
+    line-height: 20px;
     margin-bottom: 20px;
   }
   .banner-content .banner-right .banner-video .Media_play_button {
@@ -906,23 +1079,47 @@ a, a:hover {
   }
   .leadership-recognition .leaddership_performer {
     flex-direction: column;
-    gap: 22.28px;
+    gap: 20.69px;
   }
   .leadership-recognition .leaddership_performer .leadership_content .leadership_content_description {
     font-size: 16px;
     margin-bottom: 20px;
+    line-height: 20px;
   }
   .cloud_workFlow {
-    padding: 30px 0;
+    padding: 30px 0 15px;
   }
   .cloud_workFlow .section_title {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+  }
+  .cloud_workFlow .workflow_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
   .case_study {
-    padding: 40px 0 30px;
+    padding: 40px 0 25px;
   }
   .case_study .section_title {
     margin-bottom: 32px;
+  }
+  .case_study #case-study-owl {
+    width: 372px;
+    margin: auto;
+  }
+  .case_study #case-study-owl .owl-wrapper {
+    justify-content: start;
+    gap: 0;
+    width: inherit !important;
+  }
+  .case_study #case-study-owl .owl-item {
+    flex: none;
+    border: 1px solid #E0E0E0;
+  }
+  .case_study #case-study-owl .testimonial_caseStudy {
+    display: flex;
+    flex-direction: column;
+    width: inherit !important;
   }
   .our-customers {
     padding: 30px 0 43px;
@@ -930,8 +1127,11 @@ a, a:hover {
   .our-customers .section_title {
     margin-bottom: 29.71px;
   }
+  .our-customers #our-customers-owl .owl-item:first-child {
+    margin-right: 0;
+  }
   .key-takeaways {
-    padding: 40px 0;
+    padding: 40px 0 0;
   }
   .key-takeaways .section_title {
     margin-bottom: 30px;
@@ -942,5 +1142,110 @@ a, a:hover {
   .key-takeaways .key-points-container .key-points-content .webinar__btn {
     display: block;
     margin: 0 auto 30px auto;
+  }
+  .key-takeaways .key-points-container .key-points-video .webinar_video .play_btn {
+    padding: 17px;
+  }
+  .key-takeaways .key-points-container .key-points-video .webinar_video .play_btn i {
+    font-size: 41px;
+  }
+  .app-list {
+    padding-top: 40px;
+  }
+  .app-list .section_title {
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+  .app-list .tabs {
+    margin-bottom: 30px;
+  }
+  .app-list .tabs .search__bar {
+    width: 100%;
+  }
+  .app-list .tabs .search__bar .input__field {
+    padding-left: 42px;
+  }
+  .app-list .tabs .search__bar .search_icon {
+    margin-left: 16px;
+    line-height: 18px;
+  }
+  .app-list .apps-detail .app-row {
+    grid-template-columns: repeat(4, 66px);
+  }
+  .navigation .nav_tab {
+    width: 100%;
+    overflow-x: auto;
+    gap: 40px;
+  }
+  .navigation .nav_tab .tab {
+    white-space: nowrap;
+  }
+  .navigation .nav_tab::-webkit-scrollbar {
+    display: none;
+  }
+  .navigation .nav_tab {
+    scrollbar-width: none;
+    scrollbar-color: transparent transparent;
+  }
+  .features {
+    padding-top: 31px;
+  }
+  .features .section_title {
+    margin-bottom: 30px;
+  }
+  .features .content_container .content_title {
+    margin-bottom: 10px;
+    line-height: 20px;
+  }
+  .features .content_container .content_description {
+    line-height: 23px;
+  }
+  .benefits {
+    padding-top: 30px;
+  }
+  .benefits .section_title {
+    margin-bottom: 30px;
+  }
+  .benefits .benefits_row {
+    grid-template-columns: repeat(1, 100%);
+    gap: 21px;
+    padding: 0;
+  }
+  .benefits .benefits_point {
+    gap: 20px;
+  }
+  .architecture {
+    padding-top: 30px;
+  }
+  .architecture .section_title {
+    margin-bottom: 30px;
+  }
+  .faq {
+    padding-top: 50px;
+  }
+  .faq .section_title {
+    margin-bottom: 30px;
+  }
+  .faq .faq_content {
+    gap: 30px;
+  }
+  .faq .faq_content .content_container {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .view-plans {
+    padding: 40px 0;
+  }
+  .view-plans .section_title {
+    margin-bottom: 50px;
+  }
+  .view-plans .offer_note {
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .app-list .apps-detail .app-row {
+    grid-template-columns: repeat(3, 66px);
   }
 }/*# sourceMappingURL=main.css.map */

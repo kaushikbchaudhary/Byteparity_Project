@@ -1,0 +1,167 @@
+
+// tab & search bar Mobail view
+.tabs{
+    margin-bottom: 30px;
+}
+//  Banner sectino mobail view
+.banner-content{
+    padding: 60.75px 0;
+
+    .banner-left{
+        .banner-heading{
+            font-size: 29px;
+            margin-bottom: 21px;
+            line-height: 40px;
+        }
+        .banner-description{
+            font-size: 15px;
+            line-height: 23px;
+            margin-bottom: 35px;
+        }
+    }
+    .banner-right{
+        .banner-video{
+            .Media_play_button{
+                width: 46px;
+            }
+        }
+    }
+}
+
+// Integration xl view
+.integrations{
+    padding: 46px 0;
+
+    .section_title{
+        margin-bottom: 38px;
+    }
+    .tab__content{
+        .ticket{
+            margin-bottom: 20px;
+            padding-right: 16px;
+        }
+    }
+}
+
+.leadership-recognition{
+    padding: 53px 0;
+    .leaddership_performer{
+        .leadership_content{
+            .leadership_content_description{
+                font-size: 20px;
+                margin-bottom: 18px;
+                line-height: 24px;
+            }
+        }
+
+    }
+}
+
+// cloud_workFlow
+.cloud_workFlow{
+    padding: 45px 0;
+    .section_title{
+        margin-bottom: 30px;
+    }
+}
+
+.case_study{
+    padding: 50px 0;
+    .section_title{
+        margin-bottom: 31px;
+    }
+}
+
+.our-customers{
+    padding: 48px 0 73px;
+
+    .section_title{
+        margin-bottom: 46px;
+    }
+}
+
+.key-takeaways{
+    padding: 53px 0;
+
+    .section_title{
+        margin-bottom: 46px;
+    }
+    .key-points-container {
+        .key-points-content{
+            .key-points-list{
+                margin-bottom: 10px;
+            }
+        }
+        .key-points-video{
+            .webinar_video{
+                float: none;
+                display: block;
+                margin: 0 auto;
+            .play_btn{
+                i{font-size: 49px;}
+            }
+            }
+        }
+    }
+}
+
+.app-list{
+    padding-bottom: 49px;
+
+    .section_title{
+        margin-bottom: 31px;
+    }
+    .tabs{
+        margin-bottom: 37px;
+
+        .search__bar{
+            // width: 100%;
+
+            .input__field{
+                padding-left: 46px;
+            }
+            .search_icon{
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
+.features{
+    padding-top: 41px;
+    .section_title{margin-bottom: 35px;}
+}
+
+.benefits{
+    padding-top: 45px;
+
+    .section_title{margin-bottom: 35px;}
+    .benefits_point{
+        gap: 30px;
+    }
+}
+
+.architecture{
+    padding-top: 45px;
+
+    .section_title{margin-bottom: 35px;}
+}
+
+.faq{
+    padding-top: 55px;
+
+    .section_title{margin-bottom: 35px;}
+
+    .faq_content{
+        gap: 30px 41px;
+        
+    }
+}
+
+.view-plans{
+    padding: 50px 0;
+
+    .section_title{
+        margin-bottom: 45px;
+    }
+}

@@ -1,0 +1,295 @@
+.container{
+    padding: 0 20px;
+}
+
+// tab & search bar Mobail view
+.tabs{
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 20px;
+
+    ul{
+        overflow-x: auto;
+    }
+    ul::-webkit-scrollbar {
+        display: none;  
+    }
+    // For Firefox:
+    ul {
+        scrollbar-width: none;
+        scrollbar-color: transparent transparent;
+    }
+
+    .search__bar{
+        width: 100%;
+    }
+}
+//  Banner sectino mobail view
+.banner-content{
+    padding: 40.75px 0 17px;
+
+    .banner-left{
+        margin-bottom: 26px;
+        .banner-heading{
+            font-size: 24px;
+            margin-bottom: 15.25px;
+            line-height: 31px;
+        }
+        .banner-description{
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+    }
+    .banner-right{
+        .banner-video{
+            .Media_play_button{
+                width: 34px;
+            }
+        }
+    }
+}
+
+// Integration Mobail view
+.integrations{
+    padding: 30px 0;
+
+    .section_title{
+        margin-bottom: 25px;
+    }
+// .integrations .tab__content .ticket .ticket__description p 
+    .tab__content{
+        .ticket{
+            margin-bottom: 10px;
+            padding-right: 13px;
+        }
+    }
+}
+
+// Announcement Mobail view
+
+// .announcement{
+//     // .announcement__content
+// }
+
+.leadership-recognition{
+    padding: 40px 0;
+
+    .leaddership_performer{
+        // display: block;
+        flex-direction: column;
+        gap: 20.69px;
+
+        .leadership_content{
+            .leadership_content_description{
+                font-size: 16px;
+                margin-bottom: 20px;
+                line-height: 20px;
+            }
+        }
+
+    }
+}
+
+// cloud_workFlow
+.cloud_workFlow{
+    padding: 30px 0 15px;
+    .section_title{
+        margin-bottom: 15px;
+    }
+    .workflow_cards{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+.case_study{
+    padding: 40px 0 25px;
+    .section_title{
+        margin-bottom: 32px;
+    }
+    #case-study-owl{
+        width: 372px;
+        margin: auto;
+        .owl-wrapper{
+            justify-content: start;
+            gap: 0;
+            width: inherit !important;
+        }
+        .owl-item{
+            flex: none;
+            border: 1px solid #E0E0E0;
+        }
+        .testimonial_caseStudy{
+            display: flex;
+            flex-direction: column;
+            width: inherit !important;
+        }
+    }
+
+    .testimonial_container{
+        // .owl-wrapper{
+        //     // flex-direction: ;
+        //     flex: none !important;
+        // }
+    }
+
+    // .testimonial_caseStudy{
+
+    // }
+}
+
+.our-customers{
+    padding: 30px 0 43px;
+
+    .section_title{
+        margin-bottom: 29.71px;
+    }
+
+    #our-customers-owl{
+        .owl-item:first-child{
+            margin-right: 0;
+        }
+    }
+}
+
+.key-takeaways{
+    padding: 40px 0 0;
+
+    .section_title{
+        margin-bottom: 30px;
+    }
+    .key-points-container {
+        .key-points-content{
+            .key-points-list{
+                margin-bottom: 5px;
+            }
+            .webinar__btn{
+                display: block;
+                margin: 0 auto 30px auto;
+            }
+        }
+        .key-points-video{
+            .webinar_video{
+            .play_btn{
+                padding: 17px;
+                i{font-size: 41px;}
+            }
+            }
+        }
+    }
+}
+
+.app-list{
+    padding-top: 40px;
+
+    .section_title{
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    .tabs{
+        margin-bottom: 30px;
+
+        .search__bar{
+            width: 100%;
+
+            .input__field{
+                padding-left: 42px;
+            }
+            .search_icon{
+                margin-left: 16px;
+                line-height: 18px;
+            }
+        }
+    }
+
+    .apps-detail{
+        .app-row{
+            grid-template-columns: repeat(4,66px);
+            // gap: 50px;
+        }
+    }
+}
+
+.navigation{
+
+     .nav_tab{
+        width: 100%;
+        overflow-x: auto;
+                gap: 40px;
+        .tab{
+                white-space: nowrap;
+        }
+    }
+    .nav_tab::-webkit-scrollbar {
+        display: none;  
+    }
+    // For Firefox:
+    .nav_tab {
+        scrollbar-width: none;
+        scrollbar-color: transparent transparent;
+    }    
+}
+
+.features{
+    padding-top: 31px;
+
+    .section_title{margin-bottom: 30px;}
+    .content_container{
+        .content_title{
+            margin-bottom: 10px;
+            line-height: 20px;
+        }
+        .content_description{
+            line-height: 23px;
+        }
+    }
+
+}
+
+.benefits{
+    padding-top: 30px;
+
+    .section_title{margin-bottom: 30px;}
+
+    .benefits_row{
+        grid-template-columns: repeat(1,100%);
+        gap: 21px;
+        padding: 0;
+    }
+    .benefits_point{
+        gap: 20px;
+    }
+}
+
+.architecture{
+    padding-top: 30px;
+    .section_title{margin-bottom: 30px;}
+}
+
+.faq{
+    padding-top: 50px;
+
+    .section_title{margin-bottom: 30px;}
+
+    .faq_content{
+        gap: 30px;
+        .content_container{
+            width: 100%;
+            margin-bottom: 0;
+           
+        }
+    }
+}
+
+.view-plans{
+    padding: 40px 0;
+
+    .section_title{
+        margin-bottom: 50px;
+    }
+    .offer_note{
+        line-height: 22px;
+    }
+}
