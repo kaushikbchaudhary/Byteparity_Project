@@ -72,19 +72,30 @@ sections.forEach(section => {
 
 
 $(document).ready(function () {
-                $(".owl-carousel").owlCarousel({
-                    // items: 1, // Number of items to display
-                    // Responsive
-    responsive: true,
-    items : 2,
-    itemsDesktop : [1199,2],
-    itemsDesktopSmall : [980,2],
-    itemsTablet: [768,1],
-    itemsMobile : [479,1],
-                    loop: true, // Infinite loop
-                    autoplay: true, // Autoplay the slider
-                    autoplayTimeout: 3000, // Autoplay interval in milliseconds
-                    autoplayHoverPause: true // Pause autoplay when mouse is over the slider
-                });
-            });
+    $("#case-study-owl").owlCarousel({
+        responsive: true,
+        items : 2,
+        itemsDesktop : [1199,2],
+        itemsDesktopSmall : [980,2],
+        itemsTablet: [768,1],
+        itemsMobile : [479,1],
+        loop: true, // Infinite loop
+        autoplay: true, // Autoplay the slider
+        autoplayTimeout: 3000, // Autoplay interval in milliseconds
+        autoplayHoverPause: true // Pause autoplay when mouse is over the slider
+    });
+
+    $("#our-customers-owl").owlCarousel({
+        responsive: true,
+        items: 2,
+        itemsDesktop : [1199,2],
+        itemsDesktopSmall : [980,2],
+        itemsTablet: [768,1],
+        itemsMobile : [479,1],
+        loop: true, // Infinite loop
+        autoplay: true, // Autoplay the slider
+        autoplayTimeout: 3000, // Autoplay interval in milliseconds
+        autoplayHoverPause: true // Pause autoplay when mouse is over the slider
+    });
+});
             

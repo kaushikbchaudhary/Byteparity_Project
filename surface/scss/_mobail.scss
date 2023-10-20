@@ -9,7 +9,15 @@
     margin-bottom: 20px;
 
     ul{
-        flex-wrap: wrap;
+        overflow-x: auto;
+    }
+    ul::-webkit-scrollbar {
+        display: none;  
+    }
+    // For Firefox:
+    ul {
+        scrollbar-width: none;
+        scrollbar-color: transparent transparent;
     }
 
     .search__bar{
@@ -25,16 +33,18 @@
         .banner-heading{
             font-size: 24px;
             margin-bottom: 15.25px;
-            // line-height: 32px;
+            line-height: 32px;
         }
         .banner-description{
             font-size: 14px;
             line-height: 22px;
             margin-bottom: 20px;
         }
-        .btns{
-            .btn{
-                font-size: 14px;
+    }
+    .banner-right{
+        .banner-video{
+            .Media_play_button{
+                width: 34px;
             }
         }
     }
@@ -45,18 +55,22 @@
     padding: 30px 0;
 
     .section_title{
-        line-height: 32px;
         margin-bottom: 25px;
     }
-
+// .integrations .tab__content .ticket .ticket__description p 
     .tab__content{
         .ticket{
             margin-bottom: 10px;
+            padding-right: 13px;
         }
     }
 }
 
-// Announcement Nothing to do wiht Mobail view
+// Announcement Mobail view
+
+.announcement{
+    // .announcement__content
+}
 
 .leadership-recognition{
     padding: 40px 0;
@@ -104,5 +118,30 @@
 
     // }
 }
-// .view-plans .table tbody th, .view-plans .table tbody td {
-// }
+
+.our-customers{
+    padding: 30px 0 43px;
+
+    .section_title{
+        margin-bottom: 29.71px;
+    }
+}
+
+.key-takeaways{
+    padding: 40px 0;
+
+    .section_title{
+        margin-bottom: 30px;
+    }
+    .key-points-container {
+        .key-points-content{
+            .key-points-list{
+                margin-bottom: 5px;
+            }
+            .webinar__btn{
+                display: block;
+                    margin: 0 auto 30px auto;
+            }
+        }
+    }
+}
