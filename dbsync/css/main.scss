@@ -12,7 +12,8 @@
 @import "footer";
 
 // X-Small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
+// @media (max-width: 575.98px) {
+@media (max-width: 767.98px) {
   @import "headerMedia";
   @import "bannerMobail";
   @import "ratingMobail";
