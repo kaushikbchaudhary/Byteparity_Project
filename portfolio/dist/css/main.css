@@ -21,6 +21,13 @@ a:link {
   color: #E2E8F0;
 }
 
+.section_title {
+  color: #E2E8F0;
+  margin-bottom: 20px;
+  text-align: left;
+  display: none;
+}
+
 .horizontal-line {
   width: 25px;
   height: 1px;
@@ -176,24 +183,51 @@ a:link {
   line-height: 24px;
   font-weight: 600;
 }
-.slide .footer p {
+.slide .footer {
   margin: 13vh 0;
+}
+.slide .footer p {
+  line-height: 24px;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 991.98px) {
+  .section_title {
+    display: block;
+  }
+  .container {
+    padding: 0 24px;
+  }
   .portfolio {
     display: flex;
     flex-direction: column;
   }
   .portfolio .bio > div {
     position: static;
-    text-align: center;
     align-items: center;
     align-content: center;
   }
+  .portfolio .bio > div h1 {
+    font-size: 30px;
+  }
   .portfolio .bio > div p {
-    margin: 0 auto;
     width: 100%;
-    text-align: center;
+  }
+  .portfolio .bio .nav ul {
+    display: none;
+  }
+  .portfolio .bio .social-media {
+    margin: 0;
+  }
+  .slide .cards .card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .slide .cards .card .date {
+    width: 100%;
+    align-self: left;
+  }
+  .slide .projects img {
+    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */

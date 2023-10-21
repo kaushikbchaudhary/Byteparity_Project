@@ -18,6 +18,12 @@ a:link{
     text-decoration: none;
     color: #E2E8F0;
 }
+.section_title{
+    color: #E2E8F0;
+    margin-bottom: 20px;
+    text-align: left;
+    display: none;
+}
 .horizontal-line{
     width: 25px;
     height: 1px;
@@ -205,8 +211,11 @@ a:link{
     
     // footer
     .footer{
-        p{
+    
             margin: 13vh 0;
+        p{
+            line-height: 24px;
+            margin-bottom: 20px;
         }
     }
 }
