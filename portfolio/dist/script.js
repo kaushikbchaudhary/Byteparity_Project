@@ -30,6 +30,29 @@ navbar.addEventListener('click', function (e) {
         e.target.classList.add('active')
         const index = tabArry.indexOf(e.target);
         sections[index].scrollIntoView({ behavior: 'smooth'});
-
     }
 });
+
+const dots = document.querySelectorAll('.dots');
+const cards = document.querySelectorAll('.card');
+
+
+
+function myFunction(x){
+    cards.forEach(card => {
+        card.onmouseenter = function (e) {
+            if (!e.target.querySelector('.more')) return;
+                e.target.querySelector('.dot').style.display = "none";
+                e.target.querySelector(".more").style.display = "inline";
+        }
+        card.onmouseleave = function (e) {
+            if (!e.target.querySelector('.more')) return;
+            e.target.querySelector(".more").style.display = "none";
+            e.target.querySelector('.dot').style.display = "block"; 
+            }
+    });
+}
+
+let x = window.matchMedia("(min-width: 991.68px)");
+myFunction(x); // Call listener function at run time
+x.addListener(myFunction); // Attach listener function on state changes

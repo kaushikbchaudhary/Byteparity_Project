@@ -137,6 +137,8 @@ a:link{
             padding: 20px;
             display: flex;
             gap: 30px;
+            transition: all .2s ease-in-out;
+
             
             &:hover{
                 background-color: rgba(209, 213, 219,0.1);
@@ -220,6 +222,14 @@ a:link{
     }
 }
 
+.more{
+    display: none;
+    transition: all .3s ease-in-out;
+}
+.dot{
+    display: block;
+    transition: all .3s ease-in-out;
+}
 // X-Small devices (portrait phones, less than 576px)
 // @media (max-width: 575.98px) { }
 
