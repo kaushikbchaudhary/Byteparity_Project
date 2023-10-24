@@ -8,11 +8,9 @@ const activeTab = function (enteries, observer) {
     enteries.forEach(entry => {
         if (!entry.isIntersecting) return;
         console.log(entry.target);
-        // console.log(enteries.indexOf(entry.target));
         const index = Array.from(sections).indexOf(entry.target);
         tabs.forEach(tab => tab.classList.remove('active'));
         tabs[index].classList.add('active');
-        // console.log(enteries);
     });
 }
 const sectionObserver = new IntersectionObserver(activeTab, {
@@ -25,18 +23,16 @@ const tabArry = Array.from(tabs);
 
 sections.forEach(section => sectionObserver.observe(section));
 navbar.addEventListener('click', function (e) {
-    if (e.target.classList.contains('nav-tab')) {
+    if (!e.target.classList.contains('nav-tab')) return;
+     
         // tabs.forEach(tab => tab.classList.remove('active'));
         e.target.classList.add('active')
         const index = tabArry.indexOf(e.target);
-        sections[index].scrollIntoView({ behavior: 'smooth'});
-    }
+        sections[index].scrollIntoView({ behavior: 'smooth'}); 
 });
 
 const dots = document.querySelectorAll('.dots');
 const cards = document.querySelectorAll('.card');
-
-
 
 function myFunction(x){
     cards.forEach(card => {
@@ -54,5 +50,5 @@ function myFunction(x){
 }
 
 let x = window.matchMedia("(min-width: 991.68px)");
-myFunction(x); // Call listener function at run time
-x.addListener(myFunction); // Attach listener function on state changes
+myFunction(x);
+x.addListener(myFunction); 
