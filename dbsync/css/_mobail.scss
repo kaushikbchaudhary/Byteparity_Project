@@ -1,0 +1,369 @@
+// Header
+.header {
+  .logo {
+    margin: 15.25px 0;
+
+    img {
+      width: 54px;
+    }
+  }
+
+  .header-right {
+    .header-gray {
+      display: none;
+    }
+
+    .header-white {
+      .navbar_ {
+        .navbar_nav {
+          position: absolute;
+          top: 70px;
+          left: 0;
+          width: 100%;
+          display: none;
+          flex-direction: column;
+
+          a {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            color: #ffff;
+            margin: 0;
+
+            &:hover {
+              border-bottom: none;
+            }
+          }
+        }
+
+        .nav-right {
+          position: absolute;
+          top: 29px;
+          right: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .navbar-login {
+            a {
+              display: none;
+            }
+          }
+          .trial-btn {
+            margin: 0;
+            padding: 6px 12px;
+          }
+
+          .hamburger-menu {
+            display: block;
+            margin: 0 16px;
+
+            i {
+              font-size: 17px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// <<<<<<< Header
+// Banner >>>>>>
+.banner-img {
+  padding: 40px 0;
+
+  .hero-section {
+    h1 {
+      font-size: 24px;
+      word-spacing: -0.48px;
+      line-height: 28px;
+      margin-bottom: 6px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 22px;
+      margin-bottom: 40px;
+    }
+    .show-case {
+      grid-template-columns: repeat(7, 1fr);
+      display: flex;
+      flex-wrap: wrap;
+      width: 296px;
+      margin-bottom: 25px;
+    }
+
+    .banner-btn {
+      display: none;
+    }
+  }
+}
+// <<<<<<<< Banner
+// Rating >>>>>>>
+.panel {
+  padding: 0 15px;
+}
+
+.home-ratings {
+  bottom: -51px;
+  overflow: hidden;
+  padding: 14px 5px 15px 6px;
+  justify-content: space-around;
+
+  .rating-box {
+    width: 108px;
+
+    .rating-img {
+      margin-bottom: 4px;
+    }
+
+    .ratings {
+      align-items: center;
+      flex-direction: column;
+
+      .rating-star {
+        margin: 0;
+      }
+
+      .reviews-number {
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+// <<<<<< Rating panel
+// Content >>>>>>
+.content {
+  padding: 30px 0;
+  margin-top: 45px;
+
+  .text-center {
+    font-size: 24px;
+    margin-bottom: 10.5px;
+  }
+  .nav {
+    margin-bottom: 20.5px;
+
+    .nav-link {
+      margin-right: 25px;
+      line-height: 1.53;
+    }
+  }
+
+  .tab-content {
+    .slick-next {
+      right: 13px;
+    }
+
+    .slick-prev {
+      left: 13px;
+      z-index: 5;
+    }
+  }
+}
+// <<<<<<< content
+// product >>>>>
+.product-section {
+  display: none;
+  padding: 36px 0 44px;
+
+  .product-description {
+    font-size: 24px;
+    margin-bottom: 35px;
+  }
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.our_products {
+  align-items: center;
+  flex-direction: column;
+
+  .pro_card {
+    h2 {
+      font-weight: 900;
+      margin-bottom: 14px;
+    }
+
+    img {
+      margin-bottom: 14px;
+    }
+
+    p {
+      margin-bottom: 29px;
+    }
+  }
+}
+
+.slick-dots li button {
+  &:before {
+    font-size: 8px;
+    color: #41a6ff;
+  }
+}
+
+.slick-dots li.slick-active button:before {
+  color: #41a6ff;
+}
+// <<<<<<< Product
+// DbManaement >>>>>>
+.home-db-platform {
+  padding: 30px 0;
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+}
+// <<<<<<< DbManagement
+// Study >>>>>
+.case-study-section {
+  padding: 0;
+
+  .case-study-row {
+    &:nth-child(even) {
+      .case-study {
+        flex-direction: column;
+      }
+    }
+    .case-study {
+      padding: 30px 0;
+      flex-direction: column;
+
+      .case-study-img {
+        margin-bottom: 30px;
+      }
+
+      &-info {
+        h3 {
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 12px;
+        }
+
+        p {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+// <<<<<<< Study
+// Client-img-grid >>>>>>
+.client-section {
+  padding: 30px 0;
+
+  h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .client_imgs {
+    gap: 10.14px 10px;
+    grid-template-columns: repeat(3, auto);
+
+    img:nth-child(n + 7) {
+      display: none;
+    }
+  }
+}
+// <<<<<< Client-img-grid
+// Client speak >>>>
+.client_section {
+  padding: 30px 0;
+
+  .slick-dots {
+    bottom: -6px;
+  }
+
+  .client-sec-heading {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .client-cards {
+    .intro-card {
+      .client_video {
+        margin-bottom: 30.63px;
+      }
+
+      .about_work {
+        margin-bottom: 10px;
+      }
+
+      .client-intro {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .outline_btn {
+    display: none;
+  }
+}
+// <<<<< client speak
+// footer >>>>>
+.footer_top {
+  padding: 30px 0;
+
+  .footer_description {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  .footer_btns {
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+  }
+
+  .demo_btn {
+    margin: 0;
+  }
+}
+
+.footer_nav {
+  .footer_nav_col {
+    grid-template-columns: repeat(1, 1fr);
+
+    .nav_col {
+      font-size: 16px;
+      line-height: 32px;
+      margin-bottom: 30px;
+
+      &:last-child {
+        margin: 0;
+      }
+
+      div:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.footer_policy {
+  .policys {
+    padding: 20px 0;
+    flex-direction: column;
+    justify-content: center;
+
+    a,
+    p code {
+      line-height: 0;
+      font-size: 16px;
+    }
+
+    p {
+      margin-bottom: 12px;
+    }
+
+    div a {
+      font-size: 16px;
+    }
+  }
+}
+// <<<<<< footer

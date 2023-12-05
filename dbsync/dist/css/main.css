@@ -768,8 +768,8 @@ header {
   }
   .home-ratings {
     bottom: -51px;
-    padding: 14px 5px 15px 6px;
     overflow: hidden;
+    padding: 14px 5px 15px 6px;
     justify-content: space-around;
   }
   .home-ratings .rating-box {
@@ -779,8 +779,8 @@ header {
     margin-bottom: 4px;
   }
   .home-ratings .rating-box .ratings {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
   .home-ratings .rating-box .ratings .rating-star {
     margin: 0;
@@ -811,6 +811,7 @@ header {
     z-index: 5;
   }
   .product-section {
+    display: none;
     padding: 36px 0 44px;
   }
   .product-section .product-description {
@@ -821,8 +822,8 @@ header {
     margin-bottom: 0;
   }
   .our_products {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
   }
   .our_products .pro_card h2 {
     font-weight: 900;
@@ -836,17 +837,17 @@ header {
   }
   .slick-dots li button:before {
     font-size: 8px;
-    color: #41A6FF;
+    color: #41a6ff;
   }
   .slick-dots li.slick-active button:before {
-    color: #41A6FF;
+    color: #41a6ff;
   }
   .home-db-platform {
     padding: 30px 0;
   }
   .home-db-platform h2 {
-    margin-bottom: 25px;
     font-size: 20px;
+    margin-bottom: 25px;
   }
   .case-study-section {
     padding: 0;
@@ -877,8 +878,8 @@ header {
     margin-bottom: 20px;
   }
   .client-section .client_imgs {
-    grid-template-columns: repeat(3, auto);
     gap: 10.14px 10px;
+    grid-template-columns: repeat(3, auto);
   }
   .client-section .client_imgs img:nth-child(n+7) {
     display: none;
@@ -936,11 +937,12 @@ header {
     margin: 0;
   }
   .footer_policy .policys {
+    padding: 20px 0;
     flex-direction: column;
     justify-content: center;
-    padding: 20px 0;
   }
-  .footer_policy .policys a, .footer_policy .policys p code {
+  .footer_policy .policys a,
+  .footer_policy .policys p code {
     line-height: 0;
     font-size: 16px;
   }
