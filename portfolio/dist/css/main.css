@@ -6,7 +6,7 @@
 
 body {
   background-color: #010029;
-  color: #64748B;
+  color: #64748b;
   font-family: sans-serif;
 }
 
@@ -18,11 +18,12 @@ a,
 a:hover,
 a:link {
   text-decoration: none;
-  color: #E2E8F0;
+  color: #e2e8f0;
+  cursor: pointer;
 }
 
 .section_title {
-  color: #E2E8F0;
+  color: #e2e8f0;
   margin-bottom: 20px;
   text-align: left;
   display: none;
@@ -31,7 +32,7 @@ a:link {
 .horizontal-line {
   width: 25px;
   height: 1px;
-  background-color: #64748B;
+  background-color: #64748b;
   display: inline-block;
   transition: all 0.2s ease-in;
 }
@@ -60,14 +61,14 @@ a:link {
   font-weight: 700;
   line-height: 48px;
   margin-bottom: 12px;
-  color: #E2E8F0;
+  color: #e2e8f0;
 }
 .portfolio .bio h2 {
   font-size: 20px;
   line-height: 28px;
   font-weight: 500;
   margin-bottom: 16px;
-  color: #E2E8F0;
+  color: #e2e8f0;
 }
 .portfolio .bio p {
   line-height: 24px;
@@ -82,17 +83,17 @@ a:link {
   display: flex;
   align-items: center;
   gap: 15px;
-  color: #64748B;
+  color: #64748b;
   text-transform: uppercase;
 }
 .portfolio .bio .nav .nav-tab:hover,
 .portfolio .bio .nav .active {
-  color: #E2E8F0;
+  color: #e2e8f0;
 }
 .portfolio .bio .nav .nav-tab:hover .horizontal-line,
 .portfolio .bio .nav .active .horizontal-line {
   width: 60px;
-  background-color: #E2E8F0;
+  background-color: #e2e8f0;
 }
 .portfolio .social-media {
   margin: 32px 0 0 4px;
@@ -108,7 +109,7 @@ a:link {
   transition: all 0.04s ease-in;
 }
 .portfolio .social-media i:hover {
-  color: #E2E8F0;
+  color: #e2e8f0;
 }
 
 .slide .about .intro {
@@ -150,7 +151,7 @@ a:link {
 }
 .slide .cards .card h6 a {
   font-size: 16px;
-  color: #E2E8F0;
+  color: #e2e8f0;
   line-height: 12px;
 }
 .slide .cards .card h6 a i {
@@ -173,14 +174,14 @@ a:link {
 }
 .slide .projects img {
   width: 150px;
-  border: 1px solid #64748B;
+  border: 1px solid #64748b;
   box-shadow: 0px 0px 1px 2px rgba(252, 252, 252, 0.1);
 }
 .slide .projects .year {
-  color: #64748B;
+  color: #64748b;
 }
 .slide .projects p {
-  color: #E2E8F0;
+  color: #e2e8f0;
   line-height: 24px;
   font-weight: 600;
 }
