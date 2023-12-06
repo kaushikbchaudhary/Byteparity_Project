@@ -69,6 +69,7 @@ a:link {
   font-weight: 500;
   margin-bottom: 16px;
   color: #e2e8f0;
+  text-align: justify;
 }
 .portfolio .bio p {
   line-height: 24px;
