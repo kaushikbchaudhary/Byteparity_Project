@@ -31,6 +31,7 @@ navbar.addEventListener('click', function (e) {
 
   // tabs.forEach(tab => tab.classList.remove('active'));
   if (e.target.classList.contains('active')) return;
+  tabs.forEach((tab) => tab.classList.remove('active'));
   e.target.classList.add('active');
   const index = tabArry.indexOf(e.target);
   sections[index].scrollIntoView({ behavior: 'smooth' });
